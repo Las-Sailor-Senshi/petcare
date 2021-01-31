@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="894.5908203125"
+   height="356"
+   id="svg874"
+   sodipodi:docname="admin-sesion.svg"
+   inkscape:export-filename="/home/luisbarrera/SextoTrimestre/Sistemas/petcare/casos-de-uso/admin-sesion.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
+  <metadata
+     id="metadata878">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="884"
+     id="namedview876"
+     showgrid="false"
+     inkscape:zoom="1.1312434"
+     inkscape:cx="447.29541"
+     inkscape:cy="178"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g872" />
+  <defs
+     id="defs454" />
+  <g
+     id="g872">
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g578">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="575"
+         y="335"
+         width="328"
+         height="280"
+         opacity="0.2"
+         id="rect576" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g582">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="568"
+         y="328"
+         width="328"
+         height="280"
+         id="rect580" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g586">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 568 328 L 896 328 L 896 608 L 568 608 L 568 328 Z Z"
+         stroke-miterlimit="10"
+         id="path584" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g594">
+      <g
+         id="g592">
+        <path
+           fill="none"
+           stroke="none"
+           id="path588" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="679.965087890625"
+           y="347.5"
+           id="text590">Manejo de Sesión</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g598">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 521 473 L 631 489"
+         stroke-miterlimit="10"
+         id="path596" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g602">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 679 392 C 679 382.6111584 708.5492032 375 745 375 C 781.4507968 375 811 382.6111584 811 392 C 811 401.3888416 781.4507968 409 745 409 C 708.5492032 409 679 401.3888416 679 392 Z"
+         opacity="0.2"
+         id="path600" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g606">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 672 385 C 672 375.6111584 701.5492032 368 738 368 C 774.4507968 368 804 375.6111584 804 385 C 804 394.3888416 774.4507968 402 738 402 C 701.5492032 402 672 394.3888416 672 385 Z"
+         id="path604" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g610">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 672 385 C 672 375.6111584 701.5492032 368 738 368 C 774.4507968 368 804 375.6111584 804 385 C 804 394.3888416 774.4507968 402 738 402 C 701.5492032 402 672 394.3888416 672 385 Z"
+         stroke-miterlimit="10"
+         id="path608" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g618">
+      <g
+         id="g616">
+        <path
+           fill="none"
+           stroke="none"
+           id="path612" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="698.98095703125"
+           y="392"
+           id="text614">Iniciar Sesión</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g622">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 671 456 C 671 446.6111584 705.697928 439 748.5 439 C 791.302072 439 826 446.6111584 826 456 C 826 465.3888416 791.302072 473 748.5 473 C 705.697928 473 671 465.3888416 671 456 Z"
+         opacity="0.2"
+         id="path620" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g626">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 664 449 C 664 439.6111584 698.697928 432 741.5 432 C 784.302072 432 819 439.6111584 819 449 C 819 458.3888416 784.302072 466 741.5 466 C 698.697928 466 664 458.3888416 664 449 Z"
+         id="path624" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g630">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 664 449 C 664 439.6111584 698.697928 432 741.5 432 C 784.302072 432 819 439.6111584 819 449 C 819 458.3888416 784.302072 466 741.5 466 C 698.697928 466 664 458.3888416 664 449 Z"
+         stroke-miterlimit="10"
+         id="path628" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g638">
+      <g
+         id="g636">
+        <path
+           fill="none"
+           stroke="none"
+           id="path632" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="701.40185546875"
+           y="456"
+           id="text634">Cerrar Sesión</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g642">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 639 512 C 639 502.6111584 688.9202448 495 750.5 495 C 812.0797552 495 862 502.6111584 862 512 C 862 521.3888416 812.0797552 529 750.5 529 C 688.9202448 529 639 521.3888416 639 512 Z"
+         opacity="0.2"
+         id="path640" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g646">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 632 505 C 632 495.6111584 681.9202448 488 743.5 488 C 805.0797552 488 855 495.6111584 855 505 C 855 514.3888416 805.0797552 522 743.5 522 C 681.9202448 522 632 514.3888416 632 505 Z"
+         id="path644" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g650">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 632 505 C 632 495.6111584 681.9202448 488 743.5 488 C 805.0797552 488 855 495.6111584 855 505 C 855 514.3888416 805.0797552 522 743.5 522 C 681.9202448 522 632 514.3888416 632 505 Z"
+         stroke-miterlimit="10"
+         id="path648" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g658">
+      <g
+         id="g656">
+        <path
+           fill="none"
+           stroke="none"
+           id="path652" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="673.406005859375"
+           y="512"
+           id="text654">Restablecer Contraseña</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g662">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 830 487 Q 864 480 868 464 Q 872 448 840 436 Q 808 424 770 403"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path660" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g666">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 780.9308804220549 404.2311999020209 L 770 403 L 776.8587098710591 411.59988947048953"
+         stroke-miterlimit="10"
+         id="path664" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g674">
+      <g
+         id="g672">
+        <path
+           fill="none"
+           stroke="none"
+           id="path668" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="799.5"
+           y="476.5"
+           id="text670">«include»</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g678">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 266.3018181818182 327.45 C 266.3018181818182 315.05120624 276.0164239941818 305 288 305 C 299.9835760058182 305 309.6981818181818 315.05120624 309.6981818181818 327.45 C 309.6981818181818 339.84879376 299.9835760058182 349.9 288 349.9 C 276.0164239941818 349.9 266.3018181818182 339.84879376 266.3018181818182 327.45 Z"
+         id="path676" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g682">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 266.3018181818182 327.45 C 266.3018181818182 315.05120624 276.0164239941818 305 288 305 C 299.9835760058182 305 309.6981818181818 315.05120624 309.6981818181818 327.45 C 309.6981818181818 339.84879376 299.9835760058182 349.9 288 349.9 C 276.0164239941818 349.9 266.3018181818182 339.84879376 266.3018181818182 327.45 Z"
+         stroke-miterlimit="10"
+         id="path680" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g686">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 349.9 L 288 393.1"
+         stroke-miterlimit="10"
+         id="path684" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g690">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 265.0254545454546 366.1 L 310.9745454545454 366.1"
+         stroke-miterlimit="10"
+         id="path688" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g694">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 393.1 L 256.0909090909091 438"
+         stroke-miterlimit="10"
+         id="path692" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g698">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 393.1 L 319.9090909090909 438"
+         stroke-miterlimit="10"
+         id="path696" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g706">
+      <g
+         id="g704">
+        <path
+           fill="none"
+           stroke="none"
+           id="path700" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="260.168701171875"
+           y="458.5"
+           id="text702">Vendedor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g710">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 266.3018181818182 503.45 C 266.3018181818182 491.05120624 276.0164239941818 481 288 481 C 299.9835760058182 481 309.6981818181818 491.05120624 309.6981818181818 503.45 C 309.6981818181818 515.84879376 299.9835760058182 525.9 288 525.9 C 276.0164239941818 525.9 266.3018181818182 515.84879376 266.3018181818182 503.45 Z"
+         id="path708" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g714">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 266.3018181818182 503.45 C 266.3018181818182 491.05120624 276.0164239941818 481 288 481 C 299.9835760058182 481 309.6981818181818 491.05120624 309.6981818181818 503.45 C 309.6981818181818 515.84879376 299.9835760058182 525.9 288 525.9 C 276.0164239941818 525.9 266.3018181818182 515.84879376 266.3018181818182 503.45 Z"
+         stroke-miterlimit="10"
+         id="path712" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g718">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 525.9 L 288 569.1"
+         stroke-miterlimit="10"
+         id="path716" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g722">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 265.0254545454546 542.1 L 310.9745454545454 542.1"
+         stroke-miterlimit="10"
+         id="path720" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g726">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 569.1 L 256.0909090909091 614"
+         stroke-miterlimit="10"
+         id="path724" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g730">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 288 569.1 L 319.9090909090909 614"
+         stroke-miterlimit="10"
+         id="path728" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g738">
+      <g
+         id="g736">
+        <path
+           fill="none"
+           stroke="none"
+           id="path732" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="255.4873046875"
+           y="634.5"
+           id="text734">Comprador</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g742">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 467.58763636363636 414.09000000000003 C 467.58763636363636 402.44231356800003 476.72656183156363 393 488 393 C 499.27343816843637 393 508.41236363636364 402.44231356800003 508.41236363636364 414.09000000000003 C 508.41236363636364 425.73768643200003 499.27343816843637 435.18 488 435.18 C 476.72656183156363 435.18 467.58763636363636 425.73768643200003 467.58763636363636 414.09000000000003 Z"
+         id="path740" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g746">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 467.58763636363636 414.09000000000003 C 467.58763636363636 402.44231356800003 476.72656183156363 393 488 393 C 499.27343816843637 393 508.41236363636364 402.44231356800003 508.41236363636364 414.09000000000003 C 508.41236363636364 425.73768643200003 499.27343816843637 435.18 488 435.18 C 476.72656183156363 435.18 467.58763636363636 425.73768643200003 467.58763636363636 414.09000000000003 Z"
+         stroke-miterlimit="10"
+         id="path744" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g750">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 488 435.18 L 488 475.82"
+         stroke-miterlimit="10"
+         id="path748" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g754">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 466.3869090909091 450.42 L 509.6130909090909 450.42"
+         stroke-miterlimit="10"
+         id="path752" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g758">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 488 475.82 L 457.9818181818182 518"
+         stroke-miterlimit="10"
+         id="path756" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g762">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 488 475.82 L 518.0181818181818 518"
+         stroke-miterlimit="10"
+         id="path760" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g770">
+      <g
+         id="g768">
+        <path
+           fill="none"
+           stroke="none"
+           id="path764" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="462.71728515625"
+           y="538.5"
+           id="text766">Miembro</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g774">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 329 401 L 455 454"
+         stroke-miterlimit="10"
+         id="path772" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g778">
+      <path
+         fill="#FFFFFF"
+         stroke="none"
+         d="M 433.00032894888113 453.8796935472903 L 455 454 L 439.528952924412 438.3588139073489"
+         id="path776" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g782">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 433.00032894888113 453.8796935472903 L 455 454 L 439.528952924412 438.3588139073489 L 433.00032894888113 453.8796935472903"
+         stroke-miterlimit="10"
+         id="path780" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g786">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 337 537 L 455 483"
+         stroke-miterlimit="10"
+         id="path784" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g790">
+      <path
+         fill="#FFFFFF"
+         stroke="none"
+         d="M 440.021361298962 499.11336037776624 L 455 483 L 433.01463661073166 483.8023693923739"
+         id="path788" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g794">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 440.021361298962 499.11336037776624 L 455 483 L 433.01463661073166 483.8023693923739 L 440.021361298962 499.11336037776624"
+         stroke-miterlimit="10"
+         id="path792" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g798">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 655 568 C 655 558.6111584 697.9806592 551 751 551 C 804.0193408 551 847 558.6111584 847 568 C 847 577.3888416 804.0193408 585 751 585 C 697.9806592 585 655 577.3888416 655 568 Z"
+         opacity="0.2"
+         id="path796" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g802">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 648 561 C 648 551.6111584 690.9806592 544 744 544 C 797.0193408 544 840 551.6111584 840 561 C 840 570.3888416 797.0193408 578 744 578 C 690.9806592 578 648 570.3888416 648 561 Z"
+         id="path800" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g806">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 648 561 C 648 551.6111584 690.9806592 544 744 544 C 797.0193408 544 840 551.6111584 840 561 C 840 570.3888416 797.0193408 578 744 578 C 690.9806592 578 648 570.3888416 648 561 Z"
+         stroke-miterlimit="10"
+         id="path804" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g814">
+      <g
+         id="g812">
+        <path
+           fill="none"
+           stroke="none"
+           id="path808" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="684.02734375"
+           y="568"
+           id="text810">Cambiar Contraseña</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g818">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 521 457 L 684 403"
+         stroke-miterlimit="10"
+         id="path816" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g822">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 521 466 L 663 455"
+         stroke-miterlimit="10"
+         id="path820" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g826">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 521 480 L 694 543"
+         stroke-miterlimit="10"
+         id="path824" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g830">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 1043.5972283380681 407.45 C 1043.5972283380681 395.05120624 1053.3118341504319 385 1065.29541015625 385 C 1077.2789861620681 385 1086.9935919744319 395.05120624 1086.9935919744319 407.45 C 1086.9935919744319 419.84879376 1077.2789861620681 429.9 1065.29541015625 429.9 C 1053.3118341504319 429.9 1043.5972283380681 419.84879376 1043.5972283380681 407.45 Z"
+         id="path828" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g834">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 1043.5972283380681 407.45 C 1043.5972283380681 395.05120624 1053.3118341504319 385 1065.29541015625 385 C 1077.2789861620681 385 1086.9935919744319 395.05120624 1086.9935919744319 407.45 C 1086.9935919744319 419.84879376 1077.2789861620681 429.9 1065.29541015625 429.9 C 1053.3118341504319 429.9 1043.5972283380681 419.84879376 1043.5972283380681 407.45 Z"
+         stroke-miterlimit="10"
+         id="path832" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g838">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 1065.29541015625 429.9 L 1065.29541015625 473.1"
+         stroke-miterlimit="10"
+         id="path836" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g842">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 1042.3208647017045 446.1 L 1088.2699556107955 446.1"
+         stroke-miterlimit="10"
+         id="path840" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g846">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 1065.29541015625 473.1 L 1033.386319247159 518"
+         stroke-miterlimit="10"
+         id="path844" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g850">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 1065.29541015625 473.1 L 1097.204501065341 518"
+         stroke-miterlimit="10"
+         id="path848" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g858">
+      <g
+         id="g856">
+        <path
+           fill="none"
+           stroke="none"
+           id="path852" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="1022.658203125"
+           y="538.5"
+           id="text854">Base de Datos</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g862">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 805 401 L 1015 452"
+         stroke-miterlimit="10"
+         id="path860" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g866">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 856 491 L 1015 470"
+         stroke-miterlimit="10"
+         id="path864" />
+    </g>
+    <g
+       transform="translate(-230,-294) scale(1,1)"
+       id="g870">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 804 543 L 1015 479"
+         stroke-miterlimit="10"
+         id="path868" />
+    </g>
+  </g>
+</svg>
