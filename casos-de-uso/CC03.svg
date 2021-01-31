@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="620"
+   height="425"
+   id="svg722"
+   sodipodi:docname="CC03.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
+  <metadata
+     id="metadata726">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1572"
+     inkscape:window-height="856"
+     id="namedview724"
+     showgrid="false"
+     inkscape:zoom="1.5505882"
+     inkscape:cx="310"
+     inkscape:cy="212.5"
+     inkscape:window-x="14"
+     inkscape:window-y="14"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g528" />
+  <defs
+     id="defs378" />
+  <g
+     id="g720">
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g502">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 408 76.5 C 408 71.2532944 412.2532944 67 417.5 67 C 422.7467056 67 427 71.2532944 427 76.5 C 427 81.7467056 422.7467056 86 417.5 86 C 412.2532944 86 408 81.7467056 408 76.5 Z"
+         opacity="0.2"
+         id="path500" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g506">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 401 69.5 C 401 64.2532944 405.2532944 60 410.5 60 C 415.7467056 60 420 64.2532944 420 69.5 C 420 74.7467056 415.7467056 79 410.5 79 C 405.2532944 79 401 74.7467056 401 69.5 Z"
+         id="path504" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g510">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 283 127 L 552.2490234375 127 Q 562.2490234375 127 562.2490234375 137 L 562.2490234375 156 Q 562.2490234375 166 552.2490234375 166 L 283 166 Q 273 166 273 156 L 273 137 Q 273 127 283 127 Z"
+         opacity="0.2"
+         id="path508" />
+    </g>
+    <g
+       transform="translate(-110,-50)"
+       id="g514">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="m 276,120 h 269.24902 q 10,0 10,10 v 19 q 0,10 -10,10 H 276 q -10,0 -10,-10 v -19 q 0,-10 10,-10 z"
+         id="path512" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g518">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 276 120 L 545.2490234375 120 Q 555.2490234375 120 555.2490234375 130 L 555.2490234375 149 Q 555.2490234375 159 545.2490234375 159 L 276 159 Q 266 159 266 149 L 266 130 Q 266 120 276 120 Z"
+         stroke-miterlimit="10"
+         id="path516" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g528">
+      <g
+         id="g526"
+         transform="translate(-10,-2)">
+        <path
+           fill="none"
+           stroke="none"
+           id="path520"
+           d="" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="311.62329"
+           y="139.5"
+           id="text522"
+           style="text-decoration:none;text-decoration-line:none">El usuario introduce un término de</text>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="382.06958"
+           y="152.5"
+           id="text524"
+           style="text-decoration:none;text-decoration-line:none">busqueda</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g532">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 310 191 L 524.3798828125 191 Q 534.3798828125 191 534.3798828125 201 L 534.3798828125 220 Q 534.3798828125 230 524.3798828125 230 L 310 230 Q 300 230 300 220 L 300 201 Q 300 191 310 191 Z"
+         opacity="0.2"
+         id="path530" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g536">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 303 184 L 517.3798828125 184 Q 527.3798828125 184 527.3798828125 194 L 527.3798828125 213 Q 527.3798828125 223 517.3798828125 223 L 303 223 Q 293 223 293 213 L 293 194 Q 293 184 303 184 Z"
+         id="path534" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g540">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 303 184 L 517.3798828125 184 Q 527.3798828125 184 527.3798828125 194 L 527.3798828125 213 Q 527.3798828125 223 517.3798828125 223 L 303 223 Q 293 223 293 213 L 293 194 Q 293 184 303 184 Z"
+         stroke-miterlimit="10"
+         id="path538" />
+    </g>
+    <g
+       transform="translate(-116,-52)"
+       id="g550">
+      <g
+         id="g548">
+        <path
+           fill="none"
+           stroke="none"
+           id="path542"
+           d="" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="327.08008"
+           y="203.5"
+           id="text544"
+           style="text-decoration:none;text-decoration-line:none">Usuario presiona el botón de</text>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="390.68042"
+           y="216.5"
+           id="text546"
+           style="text-decoration:none;text-decoration-line:none">buscar</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g554">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 231 255 L 603 255 Q 613 255 613 265 L 613 284 Q 613 294 603 294 L 231 294 Q 221 294 221 284 L 221 265 Q 221 255 231 255 Z"
+         opacity="0.2"
+         id="path552" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g558">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 224 248 L 596 248 Q 606 248 606 258 L 606 277 Q 606 287 596 287 L 224 287 Q 214 287 214 277 L 214 258 Q 214 248 224 248 Z"
+         id="path556" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g562">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 224 248 L 596 248 Q 606 248 606 258 L 606 277 Q 606 287 596 287 L 224 287 Q 214 287 214 277 L 214 258 Q 214 248 224 248 Z"
+         stroke-miterlimit="10"
+         id="path560" />
+    </g>
+    <g
+       transform="translate(-122,-52)"
+       id="g572">
+      <g
+         id="g570">
+        <path
+           fill="none"
+           stroke="none"
+           id="path564"
+           d="" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="249.20752"
+           y="267.5"
+           id="text566"
+           style="text-decoration:none;text-decoration-line:none">El sistema busca en la base de datos los productos que</text>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="306.30151"
+           y="280.5"
+           id="text568"
+           style="text-decoration:none;text-decoration-line:none">coincidan con el término introducido</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g576">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 137 391 L 381 391 Q 391 391 391 401 L 391 420 Q 391 430 381 430 L 137 430 Q 127 430 127 420 L 127 401 Q 127 391 137 391 Z"
+         opacity="0.2"
+         id="path574" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g580">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 130 384 L 374 384 Q 384 384 384 394 L 384 413 Q 384 423 374 423 L 130 423 Q 120 423 120 413 L 120 394 Q 120 384 130 384 Z"
+         id="path578" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g584">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 130 384 L 374 384 Q 384 384 384 394 L 384 413 Q 384 423 374 423 L 130 423 Q 120 423 120 413 L 120 394 Q 120 384 130 384 Z"
+         stroke-miterlimit="10"
+         id="path582" />
+    </g>
+    <g
+       transform="translate(-114,-52)"
+       id="g594">
+      <g
+         id="g592">
+        <path
+           fill="none"
+           stroke="none"
+           id="path586"
+           d="" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="158.77515"
+           y="403.5"
+           id="text588"
+           style="text-decoration:none;text-decoration-line:none">Se muestra una ventana con los</text>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="182.61377"
+           y="416.5"
+           id="text590"
+           style="text-decoration:none;text-decoration-line:none">resultados de busqueda</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g598">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 372 349 L 418 319 L 463 349 L 418 378 L 372 349"
+         opacity="0.2"
+         id="path596" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g602">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 365 341.5 L 410.5 312 L 456 341.5 L 410.5 371 L 365 341.5"
+         id="path600" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g606">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 365 341.5 L 410.5 312 L 456 341.5 L 410.5 371 L 365 341.5 L 365 341.5"
+         stroke-miterlimit="10"
+         id="path604" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g610">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 457 391 L 717 391 Q 727 391 727 401 L 727 420 Q 727 430 717 430 L 457 430 Q 447 430 447 420 L 447 401 Q 447 391 457 391 Z"
+         opacity="0.2"
+         id="path608" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g614">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 450 384 L 710 384 Q 720 384 720 394 L 720 413 Q 720 423 710 423 L 450 423 Q 440 423 440 413 L 440 394 Q 440 384 450 384 Z"
+         id="path612" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g618">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 450 384 L 710 384 Q 720 384 720 394 L 720 413 Q 720 423 710 423 L 450 423 Q 440 423 440 413 L 440 394 Q 440 384 450 384 Z"
+         stroke-miterlimit="10"
+         id="path616" />
+    </g>
+    <g
+       transform="translate(-114,-50)"
+       id="g626">
+      <g
+         id="g624">
+        <path
+           fill="none"
+           stroke="none"
+           id="path620"
+           d="" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="457.22998"
+           y="403.5"
+           id="text622"
+           style="text-decoration:none;text-decoration-line:none">Se muestra la leyenda &quot;Ningún Resultado&quot;</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g630">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 365 341 L 256 341 L 256 384"
+         stroke-miterlimit="10"
+         id="path628" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g634">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 251.790482243984 373.83732514237585 L 256 384 L 260.209517756016 373.83732514237585"
+         stroke-miterlimit="10"
+         id="path632" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g642">
+      <g
+         id="g640">
+        <path
+           fill="none"
+           stroke="none"
+           id="path636" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="191.5"
+           y="329.5"
+           id="text638">Se encuentran productos</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g646">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 456 341 L 584 341 L 584 384"
+         stroke-miterlimit="10"
+         id="path644" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g650">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 579.790482243984 373.83732514237585 L 584 384 L 588.209517756016 373.83732514237585"
+         stroke-miterlimit="10"
+         id="path648" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g658">
+      <g
+         id="g656">
+        <path
+           fill="none"
+           stroke="none"
+           id="path652" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="495.5"
+           y="328.5"
+           id="text654">No se encuentran productos</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g662">
+      <path
+         fill="#C0C0C0"
+         stroke="none"
+         d="M 405 459.5 C 405 452.59644 410.59644 447 417.5 447 C 424.40356 447 430 452.59644 430 459.5 C 430 466.40356 424.40356 472 417.5 472 C 410.59644 472 405 466.40356 405 459.5 Z"
+         opacity="0.2"
+         id="path660" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g666">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 398 452.5 C 398 445.59644 403.59644 440 410.5 440 C 417.40356 440 423 445.59644 423 452.5 C 423 459.40356 417.40356 465 410.5 465 C 403.59644 465 398 459.40356 398 452.5 Z"
+         stroke-miterlimit="10"
+         id="path664" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g670">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 403 452.5 C 403 448.357864 406.357864 445 410.5 445 C 414.642136 445 418 448.357864 418 452.5 C 418 456.642136 414.642136 460 410.5 460 C 406.357864 460 403 456.642136 403 452.5 Z"
+         id="path668" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g674">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 410 288 L 410 311"
+         stroke-miterlimit="10"
+         id="path672" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g678">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 405.790482243984 300.83732514237585 L 410 311 L 414.209517756016 300.83732514237585"
+         stroke-miterlimit="10"
+         id="path676" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g682">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 410 224 L 410 247"
+         stroke-miterlimit="10"
+         id="path680" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g686">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 405.790482243984 236.83732514237585 L 410 247 L 414.209517756016 236.83732514237585"
+         stroke-miterlimit="10"
+         id="path684" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g690">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 410 160 L 410 183"
+         stroke-miterlimit="10"
+         id="path688" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g694">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 405.790482243984 172.83732514237585 L 410 183 L 414.209517756016 172.83732514237585"
+         stroke-miterlimit="10"
+         id="path692" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g698">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 410 80 L 410 119"
+         stroke-miterlimit="10"
+         id="path696" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g702">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 405.790482243984 108.83732514237585 L 410 119 L 414.209517756016 108.83732514237585"
+         stroke-miterlimit="10"
+         id="path700" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g706">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 256 423 L 256 452 L 398 452"
+         stroke-miterlimit="10"
+         id="path704" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g710">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 387.83732514237585 456.209517756016 L 398 452 L 387.83732514237585 447.790482243984"
+         stroke-miterlimit="10"
+         id="path708" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g714">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 584 423 L 584 452 L 423 452"
+         stroke-miterlimit="10"
+         id="path712" />
+    </g>
+    <g
+       transform="translate(-110,-50) scale(1,1)"
+       id="g718">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 433.16267485762415 447.790482243984 L 423 452 L 433.16267485762415 456.209517756016"
+         stroke-miterlimit="10"
+         id="path716" />
+    </g>
+  </g>
+</svg>
