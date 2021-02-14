@@ -34,12 +34,10 @@
         include_once "db_ecommerce.php";
         $con=mysqli_connect($host, $user, $dbpass, $db);
 
-        $query="SELECT * FROM Vendedores WHERE correo=' " . $email . " ' AND contrasena=' " .$pass. " ';";
+        $query="SELECT idVendedor,correo,nombre FROM Vendedores WHERE correo='" . $email . "' AND contrasena='" .$pass. "';";
 
         $res= mysqli_query($con,$query);
-        $row= $res -> fetch_assoc();
-
-        echo "res: " . $row['idVendedor'];
+        $row= mysqli_fetch_assoc($res);
 
         if($row){
           $_SESSION['id'] = $row['idVendedor'];
