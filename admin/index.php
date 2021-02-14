@@ -32,15 +32,17 @@
         $pass = $_REQUEST['pass']??'';
 
         include_once "db_ecommerce.php";
+        $con=mysqli_connect($host, $user, $dbpass, $db);
 
-        $con = mysqli_connect($host, $user, $dbpass, $db);
-        $query="SELECT idVendedor,correo,nombre FROM Vendedores WHERE correo='".$email."' AND contrasena='".$pass."'; ";
+        $query="SELECT * FROM Vendedores WHERE correo=' " . $email . " ' AND contrasena=' " .$pass. " ';";
 
-        $res=mysqli_query($con,$query);
-        $row=mysqli_fetch_assoc($res);
+        $res= mysqli_query($con,$query);
+        $row= $res -> fetch_assoc();
+
+        echo "res: " . $row['idVendedor'];
 
         if($row){
-          $_SESSION['id'] = $row['id'];
+          $_SESSION['id'] = $row['idVendedor'];
           $_SESSION['email'] = $row['correo'];
           $_SESSION['nombre'] = $row['nombre'];
           header("location: panel.php");
