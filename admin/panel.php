@@ -32,6 +32,10 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -53,7 +57,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="panel.php?modulo=estadisticas" class="brand-link">
-      <img src="../images/icon/favicon.png" alt="PetCare Logo" class="brand-image" style="opacity: 1">
+      <img src="../images/icon/favicon.png" alt="PetCare Logo" class="brand-image">
       <span class="brand-text font-weight-light">Admin</span>
     </a>
 
@@ -61,7 +65,7 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <p> </p>
+        <i class="fa fa-user fa-2x" style="margin-left: 0.45em"></i>
         <div class="info">
           <a href="#" class="d-block">
             <?php echo $_SESSION['nombre']; ?>
@@ -184,20 +188,26 @@
   </aside>
 
   <?php
-    if($modulo == "estadisticas" || $modulo == ""){
+    /* Se mamó el compa del tutorial con los if xd */
+    /* if($modulo == "estadisticas" || $modulo == ""){ */
+    /*   include_once('estadisticas.php'); */
+    /* } */
+    /* if($modulo == "ventas"){ */
+    /*   include_once('ventas.php'); */
+    /* } */
+    /* if($modulo == "catalogo"){ */
+    /*   include_once('catalogo.php'); */
+    /* } */
+    /* if($modulo == "cuentaVendedor"){ */
+    /*   include_once('cuentaVendedor.php'); */
+    /* } */
+    /* if($modulo == "cerrarSesion"){ */
+    /*   include_once('cerrarSesion.php'); */
+    /* } */
+    if($modulo == ""){
       include_once('estadisticas.php');
-    }
-    if($modulo == "ventas"){
-      include_once('ventas.php');
-    }
-    if($modulo == "catalogo"){
-      include_once('catalogo.php');
-    }
-    if($modulo == "cuentaVendedor"){
-      include_once('cuentaVendedor.php');
-    }
-    if($modulo == "cerrarSesion"){
-      include_once('cerrarSesion.php');
+    }else{
+      include_once($modulo.'.php');
     }
   ?>
 
@@ -239,7 +249,28 @@
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
-
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- Scripts para las datatables -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+  });
+</script>
 </body>
 
 </html>
