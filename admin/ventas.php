@@ -5,13 +5,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Detalles de Ventas</h1>
+          <h1>Información de Ventas</h1>
         </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
 
-   <!-- Main content -->
+  <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
       <div class="row">
@@ -44,7 +44,9 @@
                   <td><?php echo $row['numGuia']?></td>
                   <td><a href="https://www.fedex.com/es-mx/home.html" target="_blank">Link de Tracking</a></td>
                   <td>
-                  <a class="btn btn-info btn-sm" href="detallesVenta.php?id=<?php echo $row=['idOrden']?>" role="button">Ver Detalles</a>
+                  <a class="btn btn-info btn-sm" href="panel.php?modulo=detallesVentas" role="button">
+                    Ver Detalles
+                  </a>
                   </td>
                 </tr>
                 <?php
