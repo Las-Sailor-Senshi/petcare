@@ -117,11 +117,12 @@
               </p>
             </a>
           </li>
+          
           <li class="nav-item">
-            <a href="panel.php?modulo=cuentaVendedor" class="nav-link <?php echo($modulo=="cuentaVendedor")?" active":""; ?>">
+            <a href="panel.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores")?" active":""; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Cuenta
+                Vendedores
               </p>
             </a>
 <!--
@@ -175,9 +176,9 @@
     /* if($modulo == "catalogo"){ */
     /*   include_once('catalogo.php'); */
     /* } */
-    /* if($modulo == "cuentaVendedor"){ */
-    /*   include_once('cuentaVendedor.php'); */
-    /* } */
+      if($modulo == "Vendedores"){ 
+       include_once('vendedores.php');
+      } 
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */
     /* } */
