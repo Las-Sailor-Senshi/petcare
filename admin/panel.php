@@ -119,7 +119,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="panel.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores")?" active":""; ?>">
+            <a href="panel.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores" || $modulo=="crearVendedor")?" active":""; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Vendedores
@@ -167,6 +167,18 @@
 
   <?php
     /* Se mamó el compa del tutorial con los if xd */
+    /* Cada video pone mas xd */
+    if(isset($_REQUEST['mensaje'])){
+        ?>
+          <div class="alert alert-primary alert-dismissible fade show float" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <?php $_REQUEST['mensaje'] ?>
+          </div>
+      <?php
+    }
     /* if($modulo == "estadisticas" || $modulo == ""){ */
     /*   include_once('estadisticas.php'); */
     /* } */
@@ -179,6 +191,9 @@
       if($modulo == "Vendedores"){ 
        include_once('vendedores.php');
       } 
+      if($modulo == "crearVendedor"){
+        include_once ('crearVendedor.php');
+      }
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */
     /* } */
