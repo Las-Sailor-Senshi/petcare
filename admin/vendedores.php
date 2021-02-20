@@ -24,8 +24,7 @@
                     <th>Nombre</th>
                     <th>Correo-E</th>
                     <th>Acciones
-                    <!-- Crear vendedor -->
-                     <a href="panel.php?modulo=crearVendedor"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                     <a href="crearVendedor.php"><i class="fa fa-plus" aria-hidden="true"></i></a>
                      </th> 
                   </tr>
                   </thead>
