@@ -19,7 +19,7 @@
         $res= mysqli_query($con,$query);
         if($res){
             //Ya lo manda pero no se ve 
-            echo '<meta http-equiv="refresh" content="0; url=panel.php?modulo=Vendedores&mensaje=Vendedor creado exitosamente" /> ';
+            echo '<meta http-equiv="refresh" content="0; url=panel.php?modulo=Vendedores&mensaje=Vendedor_creado_exitosamente" /> ';
 
         }
         else{
