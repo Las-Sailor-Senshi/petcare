@@ -18,14 +18,15 @@
         ";
         $res= mysqli_query($con,$query);
         if($res){
-            //Aqui hay un error no manda el mensaje 
-            echo '<meta http-equiv="refresh" content="0; url= panel.php?modulo=Vendedores&&mensaje="Vendedor creado exitosamente" />';
+            //Ya lo manda pero no se ve 
+            echo '<meta http-equiv="refresh" content="0; url=panel.php?modulo=Vendedores&mensaje=Vendedor creado exitosamente" /> ';
+
         }
         else{
             ?>
-            <div class="alert alert-danger" role="alert">
-                Error al crear vendedor <?php echo mysqli_error($con); ?>
-            </div>
+                <div class="alert alert-danger" role="alert">
+                    Error al crear vendedor <?php echo mysqli_error($con); ?>
+                </div>
             <?php
         }
     }

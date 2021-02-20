@@ -169,8 +169,8 @@
     /* Se mamó el compa del tutorial con los if xd */
     /* Cada video pone mas xd */
     if(isset($_REQUEST['mensaje'])){
-        ?>
-          <div class="alert alert-primary alert-dismissible fade show float" role="alert">
+       ?>
+          <div class="alert alert-primary alert-dismissible fade show float-right" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               <span class="sr-only">Close</span>
