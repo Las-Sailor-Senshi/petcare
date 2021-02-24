@@ -93,7 +93,7 @@
               </p>
             </a>
           <li class="nav-item">
-            <a href="panelLoginVendedor.php?modulo=catalogo" class="nav-link <?php echo($modulo=="catalogo")?" active":""; ?>">
+            <a href="panelLoginVendedor.php?modulo=catalogo" class="nav-link <?php echo($modulo=="catalogo" || $modulo=="verProductos")?" active":""; ?>">
               <i class="nav-icon fas fa-store"></i>
               <p>
                 Catálogo
@@ -144,11 +144,17 @@
           /* if($modulo == "catalogo"){ */
           /*   include_once('catalogo.php'); */
           /* } */
-      if($modulo == "Vendedores"){ 
+      if($modulo == "vendedores"){ 
        include_once('vendedores.php');
       } 
       if($modulo == "crearVendedor"){
         include_once ('crearVendedor.php');
+      }
+      if($modulo == "catalogo"){
+        include_once ('catalogo.php');
+      }
+      if($modulo == "verProductos"){
+        include_once ('verProductos.php');
       }
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */

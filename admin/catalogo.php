@@ -1,3 +1,8 @@
+<?php
+include_once "db_ecommerce.php";
+$con = mysqli_connect($host,$user, $dbpass, $db);
+?>
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -5,7 +10,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Vendedores</h1>
+            <h1>Catalogo</h1>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -21,31 +26,28 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>Nombre</th>
-                    <th>Correo-E</th>
-                    <th>Acciones
-                    <!-- Crear vendedor, modifique el correo a unique en la bd tambien -->
-                     <a href="panelLoginVendedor.php?modulo=crearVendedor"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                     </th> 
-                  </tr>
+                    <th>Categoria</th>
+                    <th>Cantidad de productos //No esta bien la consulta</th>
+                    <th>Acciones</th>
                   </thead>
                   <tbody>
                       <!-- Conexion de la base para los vendedores -->
                     <?php
-                        include_once "db_ecommerce.php";
-                        $con=mysqli_connect($host, $user, $dbpass, $db);
-                        $query="SELECT idVendedor,correo,nombre FROM Vendedores; ";
+                        //La consulta deberia regresar el nombre de cada categoria y la cantidad de productos que pertenecen a cada categoria
+                        //Pero no lo hace xd
+                        $query="SELECT idCategoria, nomCategoria FROM Categorias";
                         $res= mysqli_query($con,$query);
-
                         while( $row= mysqli_fetch_assoc($res) ){
                      ?>
                             <tr>
-                                <td><?php echo $row['nombre'] ?></td>
-                                <td><?php echo $row['correo'] ?></td>
+                                <td><?php echo $row['nomCategoria'] ?></td>
+                                <td><?php echo $row['idCategoria'] ?></td>
                                 <td>
-                                    <a href="editarVendedor.php?id=<?php echo $row['idVendedor'] ?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
-                                    <a href="vendedores.php?idBorrar=<?php echo $row['idVendedor'] ?> " class="text-danger" ><i class="fas fa-trash  "></i></a>
-                                </td>
+
+                                    <a href="panelLoginVendedor.php?modulo=verProductos>" style="margin-right: 10px;">Ver productos</a>
+                                    <a href="editarCategoria.php?id=<?php echo $row['idCategoria'] ?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
+                                    <a href="borrarCategoria.php?idBorrar=<?php echo $row['idCategoria'] ?> " class="text-danger" ><i class="fas fa-trash  "></i></a>
+                                 </td>
                             </tr>
                  <?php
                     }
