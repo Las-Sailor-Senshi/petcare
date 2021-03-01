@@ -1,6 +1,27 @@
 <?php
 include_once "db_ecommerce.php";
 $con = mysqli_connect($host,$user, $dbpass, $db);
+
+
+$name = $_GET['name'];
+$id = $_GET['id'];
+
+/*
+if(isset($_GET['name'])){
+  $name = $_GET['name'];
+} else {
+  $name = "";
+}
+if(isset($_GET['id'])){
+  $id = $_GET['id'];
+} else {
+  $id = "";
+}
+*/
+//$name = $_GET['name'];
+//$id = $_GET['id'];
+
+
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -10,7 +31,7 @@ $con = mysqli_connect($host,$user, $dbpass, $db);
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Productos - Categoria <?php echo $_GET['name']?></h1>
+            <h1>Productos - Categoria <?php echo $name?></h1>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -36,37 +57,24 @@ $con = mysqli_connect($host,$user, $dbpass, $db);
                   <tbody>
                       <!-- Conexion de la base para los vendedores -->
                     <?php
-                        $query="SELECT idProducto, nomProducto,stock, precio FROM Productos where idCategoria = {$_GET['id']}";
+                        $query="SELECT idProducto, nomProducto,stock, precio FROM Productos WHERE idCategoria = '".$id."'";
                         $res= mysqli_query($con,$query);
                         while( $row= mysqli_fetch_assoc($res) ){
                      ?>
                             <tr>
-                                <td id = "idPorFila"><?php echo $row['idProducto'] ?></td>
-                                <td><?php echo $row['nomProducto'] ?></td>
-                                <td><?php echo $row['stock'] ?></td>
-                                <td><?php echo $row['precio'] ?></td>
+                                <td><?php echo $row['idProducto']?></td>
+                                <td><?php echo $row['nomProducto']?></td>
+                                <td><?php echo $row['stock']?></td>
+                                <td><?php echo $row['precio']?></td>
                                 <td>
-                                  <a href="" onclick="borrar();"><i class="fas fa-trash  ">Borrar</i></a>
-                                <!--    <a href="editarCategoria.php?id=<?php echo $row['idCategoria'] ?> & tablaNombre=Productos" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
-                                    <a href="eliminar.php?idBorrar=<?php echo $row['idCategoria'] ?> & tablaNombre=Productos" class="text-danger" ><i class="fas fa-trash  "></i></a>
-                              -->   </td>
+                                  <a href="" onclick="borrar();"><i class="fas fa-trash  "></i></a>
+                                  <a href="panelLoginVendedor.php?modulo=editarProducto&id=<?php echo $row['idProducto']?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
+                                  <a href="eliminar.php?id=<?php echo $row['idCategoria']?>" class="text-danger" ><i class="fas fa-trash  "></i></a>
+                                </td>
                             </tr>
                  <?php
                     }
-/*                      function borrarPhp(){
-                        $query = "DELETE FROM Productos WHERE idProducto = 203";
-                        $res = mysqli_query($con,$query);
-                                header("location:verProductos.php");
-                        }                                  
-*/
                     ?>
-<!--                             <script>
-                                  function borrar(){
-                                      borrarPhp();
-                                  }
-                                </script>
--->
-                  
                   </tbody>
                 </table>
               </div>

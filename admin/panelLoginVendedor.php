@@ -156,6 +156,9 @@
       if($modulo == "verProductos"){
         include_once ('verProductos.php');
       }
+      if($modulo == "editarProducto"){
+        include_once ('editarProducto.php');
+      }
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */
     /* } */
