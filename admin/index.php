@@ -25,6 +25,8 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Login</p>
+      
+      <!-- Verificacion de que dio click en login -->
       <?php
       if (isset($_REQUEST['login'])){
         session_start();
@@ -43,7 +45,7 @@
           $_SESSION['id'] = $row['idVendedor'];
           $_SESSION['email'] = $row['correo'];
           $_SESSION['nombre'] = $row['nombre'];
-          header("location: panel.php");
+          header("location: panelLoginVendedor.php");
         }else{
       ?>
         <div class="alert alert-danger" role="alert">

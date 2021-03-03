@@ -19,7 +19,7 @@
         $res= mysqli_query($con,$query);
         if($res){
             //Ya lo manda pero no se ve 
-            echo '<meta http-equiv="refresh" content="0; url=panel.php?modulo=Vendedores&mensaje=Vendedor_creado_exitosamente" /> ';
+            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=Vendedores&mensaje=Vendedor_creado_exitosamente" /> ';
 
         }
         else{
@@ -52,7 +52,7 @@
               <!-- /.card-header -->
               <div class="card-body">
               <!-- Aqui borra el compa de los videos la tabla que está en vendedores.php example2 -->
-                    <form action="panel.php?modulo=crearVendedor" method="post">
+                    <form action="panelLoginVendedor.php?modulo=crearVendedor" method="post">
 
                         <div class="form-group">
                           <label>idVendedor</label>
