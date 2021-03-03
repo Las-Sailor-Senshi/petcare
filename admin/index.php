@@ -45,7 +45,7 @@
           $_SESSION['id'] = $row['idVendedor'];
           $_SESSION['email'] = $row['correo'];
           $_SESSION['nombre'] = $row['nombre'];
-          header("location: panelLoginVendedor.php");
+          header("location: admin/panelLoginVendedor.php");
         }else{
       ?>
         <div class="alert alert-danger" role="alert">
