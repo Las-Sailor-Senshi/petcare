@@ -9,11 +9,14 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- <link rel="stylesheet" href="admin/plugins/fontawesome-free/css/all.min.css"> -->
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css"> -->
   <!-- Theme style -->
-  <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- <link rel="stylesheet" href="admin/dist/css/adminlte.min.css"> -->
 </head>
 
 <body class="hold-transition login-page">
@@ -45,7 +48,8 @@
           $_SESSION['id'] = $row['idVendedor'];
           $_SESSION['email'] = $row['correo'];
           $_SESSION['nombre'] = $row['nombre'];
-          header("location: admin/panelLoginVendedor.php");
+          header("location: panelLoginVendedor.php");
+          /* header("location: admin/panelLoginVendedor.php"); */
         }else{
       ?>
         <div class="alert alert-danger" role="alert">
@@ -93,10 +97,13 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="admin/plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- <script src="admin/plugins/jquery/jquery.min.js"></script> -->
 <!-- Bootstrap 4 -->
-<script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- AdminLTE App -->
-<script src="admin/dist/js/adminlte.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<!-- <script src="admin/dist/js/adminlte.min.js"></script> -->
 </body>
 </html>
