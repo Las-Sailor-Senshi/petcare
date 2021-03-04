@@ -8,14 +8,15 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="admin/plugins/fontawesome-free/css/all.min.css">
   <!-- <link rel="stylesheet" href="admin/plugins/fontawesome-free/css/all.min.css"> -->
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- <link rel="stylesheet" href="admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css"> -->
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- <link rel="stylesheet" href="admin/dist/css/adminlte.min.css"> -->
 </head>
 
@@ -27,39 +28,48 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Login</p>
+      <p class="login-box-msg">Registrate</p>
+
+<!--Modificar diseño de bd (agregar un nuevo idCliente pero nulo y con autoincremento) 
+o usar $count=101 + current($con->query("SELECT * FROM Cliente")->fetch) 
+en el parametro del idCliente y poner solo un vendedor para solo usar un idVendedor, 
+ademas de agregar todo lo que falta para agregar a un usuario o ponerlos como nulos-->
 
       <!-- Verificacion de que dio click en login -->
       <?php
-      if (isset($_REQUEST['login'])){
+      if (isset($_REQUEST['login'])) {
         session_start();
         $email = $_REQUEST['email']??'';
+        $nombre = $_REQUEST['nombre']??'';
         $password = $_REQUEST['pass']??'';
-
         include_once "admin/db_ecommerce.php";
-        $con=mysqli_connect($host, $user, $dbpass, $db);
-
-        $query="SELECT idVendedor,correo,nombre FROM Vendedores WHERE correo='".$email."' AND contrasena='".$password."'; ";
-
+        $con=mysqli_connect($host,$user,$dbpass,$db);
+        $query="INSERT into Clientes (nombre,email,pass) values ('$nombre','$email','$password')";
         $res= mysqli_query($con,$query);
-        $row= mysqli_fetch_assoc($res);
-
-        if($row){
-          $_SESSION['idVendedor'] = $row['idVendedor'];
-          $_SESSION['emailVendedor'] = $row['correo'];
-          $_SESSION['nombreVendedor'] = $row['nombre'];
-          header("location: panelLoginVendedor.php");
-          /* header("location: admin/panelLoginVendedor.php"); */
-        }else{
-      ?>
-        <div class="alert alert-danger" role="alert">
-          <b>Error de Login</b>
-        </div>
-      <?php
+        if($res){
+            ?>
+                <div class="alert alert-primary" role="alert">
+                    <strong>Registro exitoso</strong><a href=login.php>Ir al login</a>
+                </div>
+            <?php
+        } else {
+            ?>
+                <div class="alert alert-danger" role="alert">
+                    Error de registro
+                </div>
+            <?php
+            }
         }
-      }
       ?>
       <form method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email">
           <div class="input-group-append">
@@ -78,18 +88,23 @@
         </div>
         <div class="row">
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" name="login">Ingresar</button>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" name="registro">Registrarse</button>
+            <a href="login.php" class="text-success float-right">Ir a login</a>
           </div>
           <!-- /.col -->
         </div>
       </form>
+
       <p class="mb-1">
         <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
       </p>
-      <p class="mb-0">
+
+      <!-- Se repite registrarse -->
+      <!--<p class="mb-0">
         <a href="register.html" class="text-center">¿Eres nuevo?, Registrate</a>
-      </p>
+      </p>-->
+
     </div>
     <!-- /.login-card-body -->
   </div>
@@ -97,13 +112,13 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="admin/plugins/jquery/jquery.min.js"></script>
 <!-- <script src="admin/plugins/jquery/jquery.min.js"></script> -->
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="admin/dist/js/adminlte.min.js"></script>
 <!-- <script src="admin/dist/js/adminlte.min.js"></script> -->
 </body>
 </html>
