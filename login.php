@@ -87,11 +87,6 @@
         <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
       </p>
 
-      <!-- Se repite registrarse -->
-      <!--<p class="mb-0">
-        <a href="register.html" class="text-center">¿Eres nuevo?, Registrate</a>
-      </p>-->
-
     </div>
     <!-- /.login-card-body -->
   </div>

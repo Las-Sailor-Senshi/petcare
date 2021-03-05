@@ -23,14 +23,7 @@
     }
   ?>
 </head>
-<body>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-                <div class="row mt-1">
-                    <?php
-                        
-                        include_once "menu.php";
+<!--
                         $modulo=$_REQUEST['modulo']??'';
                         if($modulo=="productos" || $modulo=="" ) {
                           include_once "productos.php";
@@ -41,6 +34,21 @@
                         if($modulo=="carrito" || $modulo=="" ) {
                           include_once "carrito.php";
                         }
+                        if($modulo=="envio" || $modulo=="" ) {
+                          include_once "envio.php";
+                        }
+-->
+
+
+<body>
+ <div class="container">
+     <div class="row">
+         <div class="col-12">
+                <div class="row mt-1">
+                    <?php
+                        
+                        include_once "menu.php";
+                        $modulo=$_REQUEST['modulo']??'';
                         if($modulo=="envio" || $modulo=="" ) {
                           include_once "envio.php";
                         }
