@@ -32,7 +32,7 @@
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <!--Icono de carrito de compra -->
                 <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                <span class="badge badge-danger navbar-badge">3</span>
+                <span class="badge badge-danger navbar-badge" id = "badgeProducto"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <a href="#" class="dropdown-item">
