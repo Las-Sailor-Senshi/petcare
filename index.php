@@ -83,9 +83,6 @@
      </div>
  </div>    
 
-
-
-
     <!-- jQuery -->
 <script src="admin/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -99,5 +96,6 @@
 <script src="admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="admin/dist/js/pages/dashboard.js"></script>
+ <script src="admin/js/ecommerce.js"></script>
 </body>
 </html>
