@@ -101,10 +101,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="panelLoginVendedor.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores" || $modulo=="crearVendedor")?" active":""; ?>">
+            <a href="panelLoginVendedor.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores" || $modulo=="crearVendedor" || $modulo=="editarVendedor")?" active":""; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Vendedores (Esta solo desde bd no?)
+                Vendedores
               </p>
             </a>
 
@@ -121,8 +121,8 @@
   </aside>
 
   <?php
-    /* Se mamó el compa del tutorial con los if xd */
-    /* Cada video pone mas xd */
+  
+    //Mandar un mensaje cerrable
     if(isset($_REQUEST['mensaje'])){
        ?>
           <div class="alert alert-primary alert-dismissible fade show float-right" role="alert">
@@ -130,7 +130,7 @@
               <span aria-hidden="true">&times;</span>
               <span class="sr-only">Close</span>
             </button>
-            <?php $_REQUEST['mensaje'] ?>
+            <?php echo $_REQUEST['mensaje']; ?>
           </div>
       <?php
     }
@@ -149,6 +149,9 @@
       } 
       if($modulo == "crearVendedor"){
         include_once ('crearVendedor.php');
+      }
+      if($modulo == "editarVendedor"){
+        include_once ('editarVendedor.php');
       }
       if($modulo == "catalogo"){
         include_once ('catalogo.php');

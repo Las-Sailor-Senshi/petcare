@@ -43,7 +43,7 @@
                                 <td><?php echo $row['nombre'] ?></td>
                                 <td><?php echo $row['correo'] ?></td>
                                 <td>
-                                    <a href="editarVendedor.php?id=<?php echo $row['idVendedor'] ?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
+                                    <a href="panelLoginVendedor.php?modulo=editarVendedor&idVendedor=<?php echo $row['idVendedor'] ?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
                                     <a href="vendedores.php?idBorrar=<?php echo $row['idVendedor'] ?> " class="text-danger" ><i class="fas fa-trash  "></i></a>
                                 </td>
                             </tr>
