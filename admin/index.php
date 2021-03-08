@@ -36,7 +36,7 @@
         $email = $_REQUEST['email']??'';
         $password = $_REQUEST['pass']??'';
 
-        include_once "admin/db_ecommerce.php";
+        include_once "db_ecommerce.php";
         $con=mysqli_connect($host, $user, $dbpass, $db);
 
         $query="SELECT idVendedor,correo,nombre FROM Vendedores WHERE correo='".$email."' AND contrasena='".$password."'; ";

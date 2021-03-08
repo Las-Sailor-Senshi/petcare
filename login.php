@@ -38,8 +38,7 @@
         $password = $_REQUEST['pass']??'';
         include_once "admin/db_ecommerce.php";
         $con=mysqli_connect($host,$user,$dbpass,$db);
-        $query="SELECT idCliente, correo, nombre FROM Clientes WHERE correo='".$email."' AND contraseña='".$password."'; ";
-        $res= mysqli_query($con,$query);
+        $res= mysqli_query($con,"SELECT idCliente, correo, nombre FROM Clientes WHERE correo=$email AND contrasena=$password;");
         $row= mysqli_fetch_assoc($res);
         if($row){
           $_SESSION['idCliente'] = $row['idCliente'];
