@@ -2,6 +2,11 @@
 <html lang="en">
 <?php
   session_start();
+  session_regenerate_id(true);
+  if(isset($_REQUEST['sesion']) && $_REQUEST['sesion']=="cerrar"){
+    session_destroy();
+    header("location: index.php");
+  }
   if(isset($_SESSION['id'])==false){
     header("location: index.php");
   }
@@ -110,7 +115,7 @@
 
           </li>
           <li class="nav-item">
-            <a href="panelLoginVendedor.php?modulo=cerrarSesion" class="nav-link">
+            <a href="panelLoginVendedor.php?modulo=&sesion=cerrar" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>Cerrar Sesión</p>
             </a> 
