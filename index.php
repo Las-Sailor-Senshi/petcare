@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="admin/plugins/daterangepicker/daterangepicker.css">
+
+  <link rel="stylesheet" href="admin/css/stripe.css">
 </head>
 <body>
  <div class="container">
@@ -193,5 +195,9 @@
 <script src="admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="admin/dist/js/pages/dashboard.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="admin/js/stripe.js"></script>
+<script src="admin/js/ecommerce.js"></script>
+
 </body>
 </html>
