@@ -1,3 +1,25 @@
+<?php
+  include_once "db_ecommerce.php";
+  $con=mysqli_connect($host, $user, $dbpass, $db);
+  if(isset($_REQUEST['idBorrar'])){
+    $idVendedor=mysqli_real_escape_string($con,$_REQUEST['idBorrar']??'');
+    $query="DELETE from Vendedores where idVendedor='".$idVendedor."'; ";
+    $res=mysqli_query($con, $query);
+    if($res){
+      ?>
+        <div class="alert alert-warning float-right" role="alert">
+          USUARIO ELIMINADO exitosamente
+        </div>
+      <?php
+    }else{
+      ?>
+        <div class="alert alert-danger float-danger" role="alert">
+          ERROR AL BORRAR <?php echo mysqli_error($con); ?>
+        </div>
+      <?php
+    }
+  }
+?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -32,8 +54,6 @@
                   <tbody>
                       <!-- Conexion de la base para los vendedores -->
                     <?php
-                        include_once "db_ecommerce.php";
-                        $con=mysqli_connect($host, $user, $dbpass, $db);
                         $query="SELECT idVendedor,correo,nombre FROM Vendedores; ";
                         $res= mysqli_query($con,$query);
 
@@ -44,7 +64,7 @@
                                 <td><?php echo $row['correo'] ?></td>
                                 <td>
                                     <a href="panelLoginVendedor.php?modulo=editarVendedor&idVendedor=<?php echo $row['idVendedor'] ?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
-                                    <a href="vendedores.php?idBorrar=<?php echo $row['idVendedor'] ?> " class="text-danger" ><i class="fas fa-trash  "></i></a>
+                                    <a href="panelLoginVendedor.php?modulo=vendedores&idBorrar=<?php echo $row['idVendedor'] ?> " class="text-danger borrar" ><i class="fas fa-trash  "></i></a>
                                 </td>
                             </tr>
                  <?php
