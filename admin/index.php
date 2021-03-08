@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Petcare Login</title>
+  <title>Petcare | Login</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -45,9 +45,9 @@
         $row= mysqli_fetch_assoc($res);
 
         if($row){
-          $_SESSION['idVendedor'] = $row['idVendedor'];
-          $_SESSION['emailVendedor'] = $row['correo'];
-          $_SESSION['nombreVendedor'] = $row['nombre'];
+          $_SESSION['id'] = $row['idVendedor'];
+          $_SESSION['email'] = $row['correo'];
+          $_SESSION['nombre'] = $row['nombre'];
           header("location: panelLoginVendedor.php");
           /* header("location: admin/panelLoginVendedor.php"); */
         }else{
