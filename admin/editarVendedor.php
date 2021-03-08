@@ -1,9 +1,8 @@
 <?php
+    include_once "db_ecommerce.php";
+    $con=mysqli_connect($host, $user, $dbpass, $db);
+
     if( isset($_REQUEST['guardar'])){
-
-        include_once "db_ecommerce.php";
-        $con=mysqli_connect($host, $user, $dbpass, $db);
-
         $idVendedor= mysqli_real_escape_string($con , $_REQUEST['idVendedor']??'');
         $correo= mysqli_real_escape_string($con , $_REQUEST['correo']??'');
         $contrasena=mysqli_real_escape_string($con , $_REQUEST['contrasena']??'');
@@ -12,15 +11,12 @@
         $apPaterno= mysqli_real_escape_string($con , $_REQUEST['apPaterno']??'');
         $apMaterno= mysqli_real_escape_string($con , $_REQUEST['apMaterno']??'');
 
-        $query="INSERT INTO Vendedores
-            (idVendedor            ,correo           ,contrasena  ,nombre      ,nickname           ,apPaterno        ,apMaterno) VALUES
-            ('".$idVendedor."',  '".$correo."', '".$contrasena."','".$nombre."',  '".$nickname."' , '".$apPaterno."', '".$apMaterno."');
-        ";
+        $query="UPDATE Vendedores SET
+            correo='".$correo."',contrasena='".$contrasena."',nombre='".$nombre."',nickname='".$nickname."',apPaterno='".$apPaterno."',apMaterno='".$apMaterno."'
+            where idVendedor='".$idVendedor."' ";
         $res= mysqli_query($con,$query);
         if($res){
-            //Funciona perfecto 
-            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=Vendedores&mensaje=Vendedor creado exitosamente" /> ';
-
+            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=Vendedores&mensaje=Vendedor editado exitosamente" /> ';
         }
         else{
             ?>
@@ -30,6 +26,10 @@
             <?php
         }
     }
+    $idVendedor=mysqli_real_escape_string($con, $_REQUEST['idVendedor']??'');
+    $query="SELECT  idVendedor,correo,contrasena,nombre,nickname,apPaterno,apMaterno from Vendedores where idVendedor='".$idVendedor."'  ;";
+    $res=mysqli_query($con, $query);
+    $row=mysqli_fetch_assoc($res);
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -38,7 +38,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Crear vendedor</h1>
+            <h1>Editar Vendedor</h1>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -51,39 +51,30 @@
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-              <!-- Aqui borra el compa de los videos la tabla que está en vendedores.php example2 -->
-                    <form action="panelLoginVendedor.php?modulo=crearVendedor" method="post">
-
-                        <div class="form-group">
-                          <label>idVendedor</label>
-                          <input type="int" name="idVendedor" class="form-control" required="requiered">
-                        </div>
+                    <form action="panelLoginVendedor.php?modulo=editarVendedor" method="post">
                         <div class="form-group">
                           <label>E-mail</label>
-                          <input type="email" name="correo" class="form-control" required="requiered">
-                            <!--Borra esto
-                          <small id="helpId" class="text-muted">Help text</small>
-                            -->
+                          <input type="email" name="correo" class="form-control" value="<?php echo $row['correo'] ?>" required="requiered" >
                         </div>
                         <div class="form-group">
                           <label>Contraseña</label>
-                          <input type="password" name="contrasena" class="form-control" required="requiered">
+                          <input type="password" name="contrasena" class="form-control" value="<?php echo $row['contrasena'] ?>" required="requiered" >
                         </div>
                         <div class="form-group">
                           <label>Nombre</label>
-                          <input type="text" name="nombre" class="form-control" required="requiered">
+                          <input type="text" name="nombre" class="form-control" value="<?php echo $row['nombre'] ?>" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Apodo</label>
-                          <input type="text" name="nickname" class="form-control" required="requiered">
+                          <input type="text" name="nickname" class="form-control" value="<?php echo $row['nickname'] ?>" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Apellido Paterno</label>
-                          <input type="text" name="apPaterno" class="form-control" required="requiered">
+                          <input type="text" name="apPaterno" class="form-control" value="<?php echo $row['apPaterno'] ?>" required="requiered"> 
                         </div>
                         <div class="form-group">
                           <label>Apellido Materno</label>
-                          <input type="text" name="apMaterno" class="form-control" required="requiered">
+                          <input type="text" name="apMaterno" class="form-control" value="<?php echo $row['apMaterno'] ?>" required="requiered">
                         </div>
                         <div class="form-group">
                                 <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>

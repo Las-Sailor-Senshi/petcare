@@ -2,6 +2,11 @@
 <html lang="en">
 <?php
   session_start();
+  session_regenerate_id(true);
+  if(isset($_REQUEST['sesion']) && $_REQUEST['sesion']=="cerrar"){
+    session_destroy();
+    header("location: index.php");
+  }
   if(isset($_SESSION['id'])==false){
     header("location: index.php");
   }
@@ -101,16 +106,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="panelLoginVendedor.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores" || $modulo=="crearVendedor")?" active":""; ?>">
+            <a href="panelLoginVendedor.php?modulo=vendedores" class="nav-link <?php echo($modulo=="vendedores" || $modulo=="crearVendedor" || $modulo=="editarVendedor")?" active":""; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Vendedores (Esta solo desde bd no?)
+                Vendedores
               </p>
             </a>
 
           </li>
           <li class="nav-item">
-            <a href="panelLoginVendedor.php?modulo=cerrarSesion" class="nav-link">
+            <a href="panelLoginVendedor.php?modulo=&sesion=cerrar" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>Cerrar Sesión</p>
             </a> 
@@ -121,8 +126,8 @@
   </aside>
 
   <?php
-    /* Se mamó el compa del tutorial con los if xd */
-    /* Cada video pone mas xd */
+  
+    //Mandar un mensaje cerrable
     if(isset($_REQUEST['mensaje'])){
        ?>
           <div class="alert alert-primary alert-dismissible fade show float-right" role="alert">
@@ -130,7 +135,7 @@
               <span aria-hidden="true">&times;</span>
               <span class="sr-only">Close</span>
             </button>
-            <?php $_REQUEST['mensaje'] ?>
+            <?php echo $_REQUEST['mensaje']; ?>
           </div>
       <?php
     }
@@ -149,6 +154,9 @@
       } 
       if($modulo == "crearVendedor"){
         include_once ('crearVendedor.php');
+      }
+      if($modulo == "editarVendedor"){
+        include_once ('editarVendedor.php');
       }
       if($modulo == "catalogo"){
         include_once ('catalogo.php');
@@ -233,6 +241,18 @@
       "responsive": true,
     });
   });
+</script>
+<script>
+   $(document).ready(function() {
+      $(".borrar").click(function (e) {
+        e.preventDefault();
+        var res=confirm("¿Realmente desea eliminar al usuario?");
+        if(res==true){
+          var link=$(this).attr("href");
+          window.location=link;
+        }
+      });
+   });
 </script>
 </body>
 
