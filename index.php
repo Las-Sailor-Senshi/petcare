@@ -14,10 +14,9 @@
   <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="admin/plugins/daterangepicker/daterangepicker.css">
-<<<<<<< HEAD
 
   <link rel="stylesheet" href="admin/css/stripe.css">
-=======
+
   <?php
     session_start();
     $accion=$_REQUEST['accion']??'';
@@ -26,7 +25,7 @@
         header("Refresh:0");
     }
   ?>
->>>>>>> master
+
 </head>
 <!--
                         $modulo=$_REQUEST['modulo']??'';
