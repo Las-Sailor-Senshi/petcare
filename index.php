@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="admin/plugins/daterangepicker/daterangepicker.css">
 
   <link rel="stylesheet" href="admin/css/stripe.css">
-
   <?php
     session_start();
     $accion=$_REQUEST['accion']??'';
@@ -25,7 +24,6 @@
         header("Refresh:0");
     }
   ?>
-
 </head>
 <!--
                         $modulo=$_REQUEST['modulo']??'';
@@ -55,6 +53,10 @@
                         $modulo=$_REQUEST['modulo']??'';
                         if($modulo=="envio" || $modulo=="" ) {
                           include_once "envio.php";
+                        }
+
+                        if($modulo == "factura"){
+                          include_once "factura.php";
                         }
 
                         include_once "admin/db_ecommerce.php";
