@@ -51,7 +51,7 @@
                         
                         include_once "menu.php";
                         $modulo=$_REQUEST['modulo']??'';
-                        if($modulo=="envio" || $modulo=="" ) {
+                        if($modulo=="envio") {
                           include_once "envio.php";
                         }
 

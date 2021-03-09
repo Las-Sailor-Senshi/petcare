@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Petcare Login</title>
+  <title>Petcare | Login</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -38,7 +38,7 @@
         $password = $_REQUEST['pass']??'';
         include_once "admin/db_ecommerce.php";
         $con=mysqli_connect($host,$user,$dbpass,$db);
-        $res= mysqli_query($con,"SELECT idCliente, correo, nombre FROM Clientes WHERE correo=$email AND contrasena=$password;");
+        $res= mysqli_query($con,"SELECT idCliente, correo, nombre FROM Clientes WHERE correo='".$email."' AND contrasena='".$password."';");
         $row= mysqli_fetch_assoc($res);
         if($row){
           $_SESSION['idCliente'] = $row['idCliente'];
