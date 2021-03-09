@@ -95,16 +95,6 @@ ademas de agregar todo lo que falta para agregar a un usuario o ponerlos como nu
           <!-- /.col -->
         </div>
       </form>
-
-      <p class="mb-1">
-        <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
-      </p>
-
-      <!-- Se repite registrarse -->
-      <!--<p class="mb-0">
-        <a href="register.html" class="text-center">¿Eres nuevo?, Registrate</a>
-      </p>-->
-
     </div>
     <!-- /.login-card-body -->
   </div>

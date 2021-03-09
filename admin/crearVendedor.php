@@ -10,16 +10,16 @@
         $nombre= mysqli_real_escape_string($con , $_REQUEST['nombre']??'');
         $nickname= mysqli_real_escape_string($con , $_REQUEST['nickname']??'');
         $apPaterno= mysqli_real_escape_string($con , $_REQUEST['apPaterno']??'');
-        $amMaterno= mysqli_real_escape_string($con , $_REQUEST['amMaterno']??'');
+        $apMaterno= mysqli_real_escape_string($con , $_REQUEST['apMaterno']??'');
 
         $query="INSERT INTO Vendedores
-            (idVendedor            ,correo           ,contrasena  ,nombre      ,nickname           ,apPaterno        ,amMaterno) VALUES
-            ('".$idVendedor."',  '".$correo."', '".$contrasena."','".$nombre."',  '".$nickname."' , '".$apPaterno."', '".$amMaterno."');
+            (idVendedor            ,correo           ,contrasena  ,nombre      ,nickname           ,apPaterno        ,apMaterno) VALUES
+            ('".$idVendedor."',  '".$correo."', '".$contrasena."','".$nombre."',  '".$nickname."' , '".$apPaterno."', '".$apMaterno."');
         ";
         $res= mysqli_query($con,$query);
         if($res){
-            //Ya lo manda pero no se ve 
-            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=Vendedores&mensaje=Vendedor_creado_exitosamente" /> ';
+            //Funciona perfecto 
+            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=Vendedores&mensaje=Vendedor creado exitosamente" /> ';
 
         }
         else{
@@ -56,34 +56,34 @@
 
                         <div class="form-group">
                           <label>idVendedor</label>
-                          <input type="int" name="idVendedor" class="form-control">
+                          <input type="int" name="idVendedor" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>E-mail</label>
-                          <input type="email" name="correo" class="form-control">
+                          <input type="email" name="correo" class="form-control" required="requiered">
                             <!--Borra esto
                           <small id="helpId" class="text-muted">Help text</small>
                             -->
                         </div>
                         <div class="form-group">
                           <label>Contraseña</label>
-                          <input type="password" name="contrasena" class="form-control">
+                          <input type="password" name="contrasena" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Nombre</label>
-                          <input type="text" name="nombre" class="form-control">
+                          <input type="text" name="nombre" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Apodo</label>
-                          <input type="text" name="nickname" class="form-control">
+                          <input type="text" name="nickname" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Apellido Paterno</label>
-                          <input type="text" name="apPaterno" class="form-control">
+                          <input type="text" name="apPaterno" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                           <label>Apellido Materno</label>
-                          <input type="text" name="amMaterno" class="form-control">
+                          <input type="text" name="apMaterno" class="form-control" required="requiered">
                         </div>
                         <div class="form-group">
                                 <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>

@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="col-6">
-                    <h3>Datos de quien recibe</h3>
+                        <h3>Datos de quien recibe</h3>
                         <div class="form group">
                             <label for="">Nombre</label>
                             <input type="text" name="nombreCli" id="nombreCli" class="form-control">
@@ -38,6 +38,7 @@
                                 <input type="checkbox" class="form-check-input" id="jalar">
                                 Jalar datos del cliente
                             </label>
+                        </div>
                     </div>
                 </div>
             </div>

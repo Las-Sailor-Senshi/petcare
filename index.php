@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="admin/plugins/daterangepicker/daterangepicker.css">
+
+  <link rel="stylesheet" href="admin/css/stripe.css">
+
   <?php
     session_start();
     $accion=$_REQUEST['accion']??'';
@@ -22,15 +25,9 @@
         header("Refresh:0");
     }
   ?>
+
 </head>
-<body>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-                <div class="row mt-1">
-                    <?php
-                        
-                        include_once "menu.php";
+<!--
                         $modulo=$_REQUEST['modulo']??'';
                         if($modulo=="productos" || $modulo=="" ) {
                           include_once "productos.php";
@@ -41,6 +38,21 @@
                         if($modulo=="carrito" || $modulo=="" ) {
                           include_once "carrito.php";
                         }
+                        if($modulo=="envio" || $modulo=="" ) {
+                          include_once "envio.php";
+                        }
+-->
+
+
+<body>
+ <div class="container">
+     <div class="row">
+         <div class="col-12">
+                <div class="row mt-1">
+                    <?php
+                        
+                        include_once "menu.php";
+                        $modulo=$_REQUEST['modulo']??'';
                         if($modulo=="envio" || $modulo=="" ) {
                           include_once "envio.php";
                         }
@@ -91,6 +103,13 @@
 <script src="admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="admin/dist/js/pages/dashboard.js"></script>
+<<<<<<< HEAD
  <script src="admin/js/ecommerce.js"></script>
+=======
+<script src="https://js.stripe.com/v3/"></script>
+<script src="admin/js/stripe.js"></script>
+<script src="admin/js/ecommerce.js"></script>
+
+>>>>>>> master
 </body>
 </html>
