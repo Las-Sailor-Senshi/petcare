@@ -103,13 +103,9 @@
 <script src="admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="admin/dist/js/pages/dashboard.js"></script>
-<<<<<<< HEAD
- <script src="admin/js/ecommerce.js"></script>
-=======
 <script src="https://js.stripe.com/v3/"></script>
 <script src="admin/js/stripe.js"></script>
 <script src="admin/js/ecommerce.js"></script>
 
->>>>>>> master
 </body>
 </html>
