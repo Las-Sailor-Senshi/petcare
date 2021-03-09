@@ -45,7 +45,6 @@ $(document).ready(function () {
         );
     }
 
-
     ///Esto va antes de cerrar la ultima llave
     var nombreRec=$("#nombreRec").val();
     var emailRec=$("#emailRec").val();
