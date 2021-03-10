@@ -86,6 +86,8 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 llenaCarrito(response);
+                $("#badgeProducto").hide(500).show(500).hide(500).show(500).hide(500).show(500);
+                $("#iconoCarrito").click();
             }
         });
     });
