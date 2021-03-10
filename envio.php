@@ -46,7 +46,7 @@
     } else {
         ?>
             <div class="mt-5 text center">
-                Debe <a href="login.php">loguearse</a> o <a href="registro.php">registrarse</a>
+                Debe <a href="login.php">Loguearse</a> o <a href="registro.php">Registrarse</a>
             </div>
         <?php
     }
