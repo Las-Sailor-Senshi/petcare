@@ -25,14 +25,16 @@
   }
   ?>
 </head>
+
 <body>
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <?php
+        include_once "menu.php";
+        ?>
         <div class="row mt-1">
           <?php
-
-          include_once "menu.php";
           $modulo = $_REQUEST['modulo'] ?? '';
           if ($modulo == "envio") {
             include_once "envio.php";
@@ -56,7 +58,6 @@
           $res = mysqli_query($con, $query);
           while ($row = mysqli_fetch_assoc($res)) {
           ?>
-
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="card border-primary">
                 <img class="card-img-top img-thumbnail" src="data:image/jpeg;base64,<?php echo base64_encode($row['imagenProducto']); ?>" width="100" height="100" style="max-width:100%" style="max-height:100%" />
