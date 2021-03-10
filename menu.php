@@ -29,7 +29,7 @@
     <ul class="navbar-nav ml-auto">
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
+            <a class="nav-link" data-toggle="dropdown" href="#" id = "iconoCarrito">
                 <!--Icono de carrito de compra -->
                 <i class="fa fa-cart-plus" aria-hidden="true"></i>
                 <span class="badge badge-danger navbar-badge" id = "badgeProducto"></span>
