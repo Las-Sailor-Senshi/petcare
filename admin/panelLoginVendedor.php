@@ -246,7 +246,7 @@
    $(document).ready(function() {
       $(".borrar").click(function (e) {
         e.preventDefault();
-        var res=confirm("¿Realmente desea eliminar al usuario?");
+        var res=confirm("¿Realmente desea eliminar este elemento?");
         if(res==true){
           var link=$(this).attr("href");
           window.location=link;
@@ -254,6 +254,7 @@
       });
    });
 </script>
+
 </body>
 
 </html>

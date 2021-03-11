@@ -5,27 +5,24 @@ $con = mysqli_connect($host,$user, $dbpass, $db);
 $name =mysqli_real_escape_string($con , $_REQUEST['name']??'');
 $id =mysqli_real_escape_string($con , $_REQUEST['id']??'');
 
-//$name = $_REQUEST['name'];
-//$id = $_REQUEST['id'];
-
-//$name = $_GET['name'];
-//$id = $_GET['id'];
-
-/*
-if(isset($_GET['name'])){
-  $name = $_GET['name'];
-} else {
-  $name = "";
+if(isset($_REQUEST['idBorrarProducto'])){
+  $idProducto=mysqli_real_escape_string($con,$_REQUEST['idBorrarProducto']??'');
+  $query="DELETE from Productos where idProducto='".$idProducto."'; ";
+  $res=mysqli_query($con, $query);
+  if($res){
+    ?>
+      <div class="alert alert-warning float-right" role="alert">
+        Producto borrado exitosamente
+      </div>
+    <?php
+  }else{
+    ?>
+      <div class="alert alert-danger float-danger" role="alert">
+        ERROR AL BORRAR <?php echo mysqli_error($con); ?>
+      </div>
+    <?php
+  }
 }
-if(isset($_GET['id'])){
-  $id = $_GET['id'];
-} else {
-  $id = "";
-}
-*/
-//$name = $_GET['name'];
-//$id = $_GET['id'];
-
 
 ?>
 
@@ -60,7 +57,7 @@ if(isset($_GET['id'])){
                         <th>Acciones</th>
                   </thead>
                   <tbody>
-                      <!-- Conexion de la base para los vendedores -->
+                      <!-- Conexion de la base para los productos -->
                     <?php
                         $query="SELECT idProducto, nomProducto,stock, precio FROM Productos WHERE idCategoria = '".$id."'";
                         $res= mysqli_query($con,$query);
@@ -73,7 +70,7 @@ if(isset($_GET['id'])){
                                 <td><?php echo $row['precio']?></td>
                                 <td>
                                   <a href="panelLoginVendedor.php?modulo=editarProducto&idProducto=<?php echo $row['idProducto']?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
-                                  <a href="eliminar.php?id=<?php echo $row['idCategoria']?>" class="text-danger" ><i class="fas fa-trash  "></i></a>
+                                  <a href="panelLoginVendedor.php?modulo=verProductos&idBorrarProducto=<?php echo $row['idProducto'] ?>" class="text-danger borrar" ><i class="fas fa-trash  "></i></a>
                                 </td>
                             </tr>
                  <?php
