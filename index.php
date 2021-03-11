@@ -41,8 +41,8 @@
         if ($modulo == "productos" || $modulo == "") {
           include_once "productos.php";
         }
-        if ($modulo == "detalleProductos") {
-          include_once "detalleProductos.php";
+        if ($modulo == "detalleproducto") {
+          include_once "detalleProducto.php";
         }
         if ($modulo == "carrito") {
           include_once "carrito.php";
