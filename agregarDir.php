@@ -1,7 +1,7 @@
 <?php
 if (isset($_REQUEST['guardar'])) {
 
-  $idCliente=mysqli_real_escape_string($con , $_REQUEST['idCliente']??'');
+  $idC=$_SESSION['idCliente'];
   $idDir = mysqli_real_escape_string($con , $_REQUEST['idDir']??'');
   $calle = mysqli_real_escape_string($con, $_REQUEST['calle'] ?? '');
   $colonia = mysqli_real_escape_string($con, $_REQUEST['colonia']??'');
@@ -14,11 +14,11 @@ if (isset($_REQUEST['guardar'])) {
   $query = "INSERT INTO Direcciones
         (idCliente,idDireccion,calle_num,colonia,delMio,estado,codigoPostal,telefono_1,telefono_2) 
         VALUES 
-        ('" . $idCliente . "','" . $idDir . "','" . $calle . "','" . $colonia . "','" . $delegacion . "','" . $estado . "','" . $cp . "','" . $tel_1 . "','" . $tel_2 . "');
+        ('" . $idC . "','" . $idDir . "','" . $calle . "','" . $colonia . "','" . $delegacion . "','" . $estado . "','" . $cp . "','" . $tel_1 . "','" . $tel_2 . "');
         ";
   $res = mysqli_query($con, $query);
   if ($res) {
-    echo '<url=index.php?modulo=envio&mensaje=Dirección agregada con exito" />';
+    echo '<meta http-equiv="refresh" content="0; url=index.php?modulo=envio"/>';
   } else {
 ?>
     <div class="alert alert-danger" role="alert">

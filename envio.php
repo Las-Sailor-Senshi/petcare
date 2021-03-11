@@ -35,8 +35,8 @@ if (isset($_SESSION['idCliente'])) {
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $idCliente=mysqli_real_escape_string($con , $_REQUEST['idCliente']??'');
-                                        $query = "SELECT * FROM Direcciones WHERE idCliente='".$idCliente."'; ";
+                                        $idC=$_SESSION['idCliente'];
+                                        $query = "SELECT * FROM Direcciones WHERE idCliente='".$idC."'; ";
                                         $res = mysqli_query($con, $query);
                                         while ($row = mysqli_fetch_assoc($res)) {
                                         ?>      
