@@ -89,10 +89,10 @@ $(document).ready(function () {
             var precio=parseFloat(element['precio']);
             var totalProd=element['cantidad']*precio;
             TOTAL=TOTAL+totalProd;
+
             $("#tablaCarrito tbody").append(
                 `
                 <tr>
-                    <td><img src="${element['web_path']}" class="img-size-50"/></td>
                     <td>${element['nombre']}</td>
                     <td>
                         ${element['cantidad']}
