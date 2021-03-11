@@ -53,6 +53,9 @@
         if ($modulo == "agregarDir") {
           include_once "agregarDir.php";
         }
+        if ($modulo == "pasarela") {
+          include_once "pasarela.php";
+        }
         ?>
       </div>
     </div>
