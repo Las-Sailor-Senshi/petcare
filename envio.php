@@ -2,13 +2,12 @@
 if (isset($_SESSION['idCliente'])) {
 ?>
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-12">
-                        <h1>Dirección de <?php echo $_SESSION['nombreCliente']; ?></h1>
+                        <h1>Seleccione una dirección de envio</h1>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -31,15 +30,16 @@ if (isset($_SESSION['idCliente'])) {
                                             <th>C.P.</th>
                                             <th>Telefono 1</th>
                                             <th>Telefono 2</th>
-                                            <th><a href="panel.php?modulo=agregarDir.php"><i class="fa fa-plus" aria-hidden="true"></i></a></th>
+                                            <th>Nueva dirección <a href="index.php?modulo=agregarDir"><i class="fa fa-plus" aria-hidden="true"></i></a></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $query = "SELECT * FROM Direcciones; ";
+                                        $idCliente=mysqli_real_escape_string($con , $_REQUEST['idCliente']??'');
+                                        $query = "SELECT * FROM Direcciones WHERE idCliente='".$idCliente."'; ";
                                         $res = mysqli_query($con, $query);
                                         while ($row = mysqli_fetch_assoc($res)) {
-                                        ?>
+                                        ?>      
                                             <tr>
                                                 <td><?php echo $row['calle_num'] ?></td>
                                                 <td><?php echo $row['colonia'] ?></td>
@@ -48,7 +48,7 @@ if (isset($_SESSION['idCliente'])) {
                                                 <td><?php echo $row['codigoPostal'] ?></td>
                                                 <td><?php echo $row['telefono_1'] ?></td>
                                                 <td><?php echo $row['telefono_2'] ?></td>
-                                                <td><input type="checkbox" class="form-check-input" id="jalar"></td>
+                                                <td><button type="submit" class="btn btn-primary" name="selec">Seleccionar</button></td>
                                             </tr>
                                         <?php
                                         }
@@ -69,13 +69,17 @@ if (isset($_SESSION['idCliente'])) {
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-    </div>
+    
 <?php
 } else {
     ?>
+        <section class="content-header">
+        <hr>
         <div class="mt-5 text-center">
             Debe <a href="login.php">iniciar sesión</a> ó <a href="registro.php">registrarse</a>
         </div>
+        </section>
+        <hr>
     <?php
 }
 ?>

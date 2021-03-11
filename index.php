@@ -50,6 +50,9 @@
         if ($modulo == "envio") {
           include_once "envio.php";
         }
+        if ($modulo == "agregarDir") {
+          include_once "agregarDir.php";
+        }
         ?>
       </div>
     </div>
