@@ -51,11 +51,20 @@
                     </h2>
                 </div>
                 <div class="mt-4">
-                    <div class="btn btn-primary btn-lg btn-flat">
+                    <button class="btn btn-primary btn-lg btn-flat" id="agregarCarrito" 
+                        data-id="<?php echo $_REQUEST['id'] ?>"
+                        data-nombre="<?php echo $rowProducto['nomProducto'] ?>"
+                        data-precio="<?php echo $rowProducto['precio'] ?>"
+                      
                         <i class="fas fa-cart-plus fa-lg mr-2"></i>
-                        Add to Cart
-                    </div>
+                    >
+                        Agregar
+                    </button>
+                </div>
 
+                <div class="mt-4">
+                    Cantidad:
+                    <input type="number" class="form-control" id="cantidadProducto" value="1">
                 </div>
 
             </div>

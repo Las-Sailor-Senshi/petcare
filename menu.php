@@ -1,9 +1,12 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand navbar-dark">
+<!-- Quitar main-header y barraLateral para quitar espacio vacio de boton de categorias--> 
+  <nav class="main-header navbar navbar-expand navbar-dark">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
         <!-- BarraLateral -->
-        
+        <li class="nav-item">
+            <a class="nav-link nav-item navbar-nav" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>       
         <li class="nav-item d-none d-sm-inline-block">
             <a href="index.php" class="nav-link">Inicio</a>
         </li>
@@ -32,7 +35,6 @@
                 <span class="badge badge-danger navbar-badge" id="badgeProducto"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id = "listaCarrito">
-                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
             </div>
         </li>
         <!-- Notifications Dropdown Menu -->
@@ -43,10 +45,10 @@
             </a>
             <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
                 <?php
-                if (isset($_SESSION['idCliente']) == false) {
+                    if(isset($_SESSION['idCliente'])==false) {
                 ?>
                     <a href="login.php" class="dropdown-item">
-                        <i class="fas fa-door-open mr-2 text-primary"></i>Loguearse
+                        <i class="fas fa-door-open mr-2 text-primary"></i>Loguearse 
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="registro.php" class="dropdown-item">
@@ -56,7 +58,7 @@
                 } else {
                 ?>
                     <a href="index.php?modulo=usuario" class="dropdown-item">
-                        <i class="fas fa-user mr-2 text-primary"></i>Hola "<?php echo $_SESSION['nombreCliente']; ?>"
+                        <i class="fas fa-user mr-2 text-primary"></i>Hola <?php echo $_SESSION['nombreCliente'];?>
                     </a>
                     <form action="index.php" method="post">
                         <button name="accion" class="btn btn-danger dropdown-item" type="submit" value="cerrar">
@@ -69,4 +71,17 @@
             </div>
         </li>
     </ul>
-</nav>
+</nav> 
+<?php
+    $mensaje=$_REQUEST['mensaje']??'';
+    if($mensaje){
+        ?>
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <?php echo $mensaje; ?>
+        <?php
+    }
+?>
