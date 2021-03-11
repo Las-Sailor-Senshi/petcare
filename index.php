@@ -26,71 +26,40 @@
   ?>
 </head>
 
-                       
-                        <!-- if($modulo=="envio" || $modulo=="" ) {
-                          include_once "envio.php";
-                        } -->
-
-
-
 <body>
 
+<?php
+    include_once "admin/db_ecommerce.php";
+    $con = mysqli_connect($host, $user, $dbpass, $db);
+?>
+
  <div class="container">
-     <div class="row">
-         <div class="col-12">
-                <div class="row mt-1">
-                    <?php
-                        
-                        include_once "menu.php";
-                        $modulo=$_REQUEST['modulo']??'';
-                        if($modulo=="productos" || $modulo=="" ) {
-                          include_once "productos.php";
-                        }
-                        if($modulo=="detalleproducto" || $modulo=="" ) {
-                          include_once "detalleproducto.php";
-                        }
-                        if($modulo=="carrito" || $modulo=="" ) {
-                          include_once "carrito.php";
-                        }
-                        if($modulo=="envio" || $modulo=="" ) {
-                          include_once "envio.php";
-                        }
+  <div class="row">
+      <div class="col-12">
+            <div class="row mt-1">
+                <?php
+                    include_once "menu.php";
+                    $modulo=$_REQUEST['modulo']??'';
+                    if($modulo=="productos" || $modulo=="" ) {
+                      include_once "productos.php";
+                    }
+                    if($modulo=="detalleproducto" || $modulo=="" ) {
+                      include_once "detalleproducto.php";
+                    }
+                    if($modulo=="carrito" || $modulo=="" ) {
+                      include_once "carrito.php";
+                    }
+                    if($modulo=="envio" || $modulo=="" ) {
+                      include_once "envio.php";
+                    }
 
-                        if($modulo == "factura"){
-                          include_once "factura.php";
-                        }
-
-                        include_once "admin/db_ecommerce.php";
-                        $con = mysqli_connect($host, $user, $dbpass, $db);
-                        $query = "SELECT 
-                        p.idProducto,
-                        p.nomProducto,
-                        p.precio,
-                        p.stock,
-                        ip.imagenProducto
-                        FROM
-                        Productos AS p
-                        INNER JOIN ImagenesProductos AS ip ON ip.idProducto = p.idProducto";
-                        $res = mysqli_query($con, $query);
-                        while($row = mysqli_fetch_assoc($res)){
-                    ?>
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card border-primary">
-                              <img class="card-img-top img-thumbnail" src="data:image/jpeg;base64,<?php echo base64_encode( $row['imagenProducto']); ?>" width="100" height="100" alt=""/>
-                              <div class="card-body">
-                                <h2 class="card-title"><strong><?php echo $row['nomProducto'] ?></strong></h2>
-                                <p class="card-text"><strong>Precio:</strong><?php echo $row['precio'] ?></p>
-                                <p class="card-text"><strong>Stock:</strong><?php echo $row['stock'] ?></p>
-                                <a href="index.php?modulo=detalleproducto&id" class="btn btn-primary">Ver</a>
-                              </div>
-                            </div>
-                        </div>
-                    <?php
-                        }
-                    ?>
-                </div>
-         </div>
-     </div>
+                    if($modulo == "factura"){
+                      include_once "factura.php";
+                    }
+                ?>
+            </div>
+      </div>
+  </div>
  </div>    
 
     <!-- jQuery -->
