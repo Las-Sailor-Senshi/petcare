@@ -60,9 +60,6 @@
                           include_once "factura.php";
                         }
 
-                        <!-- jQuery -->
-                        <script src="admin/plugins/jquery/jquery.min.js"></script>
-
                         include_once "admin/db_ecommerce.php";
                         $con = mysqli_connect($host, $user, $dbpass, $db);
                         $query = "SELECT 
