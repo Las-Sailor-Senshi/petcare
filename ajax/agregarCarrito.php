@@ -12,7 +12,6 @@
         $nuevo=array(
             "id"=>$_REQUEST['id'],
             "nombre"=>$_REQUEST['nombre'],
-            "web_path"=>$_REQUEST['web_path'],
             "cantidad"=>$_REQUEST['cantidad'],
             "precio"=>$_REQUEST['precio']
         );

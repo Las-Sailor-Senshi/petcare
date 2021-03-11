@@ -32,10 +32,9 @@
             <a class="nav-link" data-toggle="dropdown" href="#" id = "iconoCarrito">
                 <!--Icono de carrito de compra -->
                 <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                <span class="badge badge-danger navbar-badge" id = "badgeProducto"></span>
+                <span class="badge badge-danger navbar-badge" id="badgeProducto"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id = "listaCarrito">
-                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
             </div>
         </li>
         <!-- Notifications Dropdown Menu -->
