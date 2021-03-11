@@ -5,7 +5,7 @@
             <th>Cantidad</th>
             <th>Precio</th>
             <th>Total</th>
-            <th></th>
+            <th>Borrar</th>
         </tr>
     </thead>
     <tbody>

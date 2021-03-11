@@ -46,7 +46,7 @@
 	                      INNER JOIN Direcciones
                         INNER JOIN Carritos
 	                      INNER JOIN Productos
-	                    WHERE idOrden = 602
+	                    WHERE idOrden = '$idVenta'
 	                      AND Ordenes.idDetalleOrden = DetallesOrdenes.idDetalleOrden
                         AND Ordenes.idCliente = Clientes.idCliente
                         AND Ordenes.idDireccion = Direcciones.idDireccion

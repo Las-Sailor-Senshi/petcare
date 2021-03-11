@@ -170,10 +170,14 @@
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */
     /* } */
-    if($modulo == ""){
+    if($modulo==""||$modulo=="resumen"){
       include_once('resumen.php');
-    }else{
-      include_once($modulo.'.php');
+    }
+    if($modulo=="ventas"){
+      include_once('ventas.php');
+    }
+    if($modulo=="detallesventas"){
+      include_once('detallesVentas.php');
     }
   ?>
 

@@ -44,7 +44,7 @@
                   <td><?php echo $row['numGuia']?></td>
                   <td><a href="https://www.fedex.com/es-mx/home.html" target="_blank">Link de Tracking</a></td>
                   <td>
-                  <a class="btn btn-info btn-sm" href="panel.php?modulo=detallesVentas" role="button">
+                  <a class="btn btn-info btn-sm" href="panelLoginVendedor.php?modulo=detallesVentas?idVenta=<?php echo $row['idOrden']?>" role="button">
                     Ver Detalles
                   </a>
                   </td>
@@ -53,14 +53,7 @@
                 }
                 ?>
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>ID</th>
-                  <th>Guía de Envio</th>
-                  <th>Link de tracking</th>
-                  <th>Ver Detalle</th>
-                </tr>
-                </tfoot>
+                
               </table>
             </div>
             <!-- /.card-body -->
