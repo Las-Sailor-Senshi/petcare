@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Petcare Admin</title>
   <!-- Google Font: Source Sans Pro -->
@@ -15,25 +14,27 @@
   <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="admin/plugins/daterangepicker/daterangepicker.css">
+
   <link rel="stylesheet" href="admin/css/stripe.css">
   <?php
-  session_start();
-  $accion = $_REQUEST['accion'] ?? '';
-  if ($accion == 'cerrar') {
-    session_destroy();
-    header("Refresh:0");
-  }
+    session_start();
+    $accion=$_REQUEST['accion']??'';
+    if($accion=='cerrar'){
+        session_destroy();
+        header("Refresh:0");
+    }
   ?>
 </head>
 
 <body>
 
-  <?php
-  include_once "admin/db_ecommerce.php";
-  $con = mysqli_connect($host, $user, $dbpass, $db);
-  ?>
-  <div class="container">
-    <div class="row">
+<?php
+    include_once "admin/db_ecommerce.php";
+    $con = mysqli_connect($host, $user, $dbpass, $db);
+?>
+
+ <div class="container">
+  <div class="row">
       <div class="col-12">
         <?php
         include_once "menu.php";
@@ -58,24 +59,25 @@
         }
         ?>
       </div>
-    </div>
   </div>
-  <!-- jQuery -->
-  <script src="admin/plugins/jquery/jquery.min.js"></script>
-  <!-- jQuery UI 1.11.4 -->
-  <script src="admin/plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- daterangepicker -->
-  <script src="admin/plugins/moment/moment.min.js"></script>
-  <script src="admin/plugins/daterangepicker/daterangepicker.js"></script>
-  <!-- AdminLTE App -->
-  <script src="admin/dist/js/adminlte.js"></script>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="admin/dist/js/pages/dashboard.js"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="admin/js/stripe.js"></script>
-  <script src="admin/js/ecommerce.js"></script>
-</body>
+ </div>    
 
+    <!-- jQuery -->
+<script src="admin/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- daterangepicker -->
+<script src="admin/plugins/moment/moment.min.js"></script>
+<script src="admin/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- AdminLTE App -->
+<script src="admin/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="admin/dist/js/pages/dashboard.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="admin/js/stripe.js"></script>
+<script src="admin/js/ecommerce.js"></script>
+
+</body>
 </html>
