@@ -167,6 +167,9 @@
       if($modulo == "editarProducto"){
         include_once ('editarProducto.php');
       }
+      if($modulo == "agregarProducto"){
+        include_once ('agregarProducto.php');
+      }
     /* if($modulo == "cerrarSesion"){ */
     /*   include_once('cerrarSesion.php'); */
     /* } */
