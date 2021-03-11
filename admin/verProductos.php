@@ -54,7 +54,9 @@ if(isset($_REQUEST['idBorrarProducto'])){
                         <th>Nombre</th>
                         <th>Stock</th>
                         <th>Precio</th>
-                        <th>Acciones</th>
+                        <th>Acciones
+                        <a href="panelLoginVendedor.php?modulo=agregarProducto&idCategoria=<?php echo $id?>"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </th>
                   </thead>
                   <tbody>
                       <!-- Conexion de la base para los productos -->
