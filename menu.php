@@ -56,7 +56,7 @@
                 } else {
                 ?>
                     <a href="index.php?modulo=usuario" class="dropdown-item">
-                        <i class="fas fa-user mr-2 text-primary"></i>Hola <?php echo $_SESSION['nombreCliente']; ?>
+                        <i class="fas fa-user mr-2 text-primary"></i>Hola "<?php echo $_SESSION['nombreCliente']; ?>"
                     </a>
                     <form action="index.php" method="post">
                         <button name="accion" class="btn btn-danger dropdown-item" type="submit" value="cerrar">

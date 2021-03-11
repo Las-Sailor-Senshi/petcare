@@ -28,11 +28,28 @@
 
 <body>
 
+  <?php
+  include_once "admin/db_ecommerce.php";
+  $con = mysqli_connect($host, $user, $dbpass, $db);
+  ?>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <?php
         include_once "menu.php";
+        $modulo = $_REQUEST['modulo'] ?? '';
+        if ($modulo == "productos" || $modulo == "") {
+          include_once "productos.php";
+        }
+        if ($modulo == "detalleProductos") {
+          include_once "detalleProductos.php";
+        }
+        if ($modulo == "carrito") {
+          include_once "carrito.php";
+        }
+        if ($modulo == "envio") {
+          include_once "envio.php";
+        }
         ?>
         <div class="row mt-1">
           <?php
