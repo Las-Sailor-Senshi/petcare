@@ -27,27 +27,20 @@ $con = mysqli_connect($host,$user, $dbpass, $db);
                   <thead>
                   <tr>
                     <th>Categoria</th>
-                    <th>Cantidad de productos //No esta bien la consulta</th>
-                    <th>Acciones</th>
+                    <th>Acciones                     
+                    </th>
+                    
                   </thead>
                   <tbody>
-                      <!-- Conexion de la base para los vendedores -->
                     <?php
-                        //La consulta deberia regresar el nombre de cada categoria y la cantidad de productos que pertenecen a cada categoria
-                        //Pero no lo hace xd
-
-                        //No use el datatable que menciona en el video 12 ya que al parecer solo dura 7 dias la licencia xd
                         $query="SELECT idCategoria, nomCategoria FROM Categorias";
                         $res= mysqli_query($con,$query);
                         while( $row= mysqli_fetch_assoc($res) ){
                      ?>
                             <tr>
                                 <td><?php echo $row['nomCategoria'] ?></td>
-                                <td><?php echo $row['idCategoria'] ?></td>
                                 <td>
                                     <a href="panelLoginVendedor.php?modulo=verProductos&id=<?php echo $row['idCategoria'] ?>&name=<?php echo $row['nomCategoria'] ?>" style="margin-right: 10px;">Ver productos</a>
-                                    <a href="editarCategoria.php?id=<?php echo $row['idCategoria'] ?> & tablaNombre=Categorias" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
-                                    <a href="borrarCategoria.php?idBorrar=<?php echo $row['idCategoria'] ?>  & tablaNombre=Categorias" class="text-danger" ><i class="fas fa-trash  "></i></a>
                                  </td>
                             </tr>
                  <?php
