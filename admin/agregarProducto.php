@@ -19,7 +19,7 @@
         $res= mysqli_query($con,$query);
         if($res){
             //Funciona perfecto 
-            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=verProductos&mensaje=Producto agregado exitosamente" /> ';
+            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto agregado exitosamente" /> ';
 
         }
         else{

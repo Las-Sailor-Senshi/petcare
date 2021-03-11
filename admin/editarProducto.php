@@ -15,7 +15,7 @@
          WHERE idProducto = '".$idProducto."'";
       $res= mysqli_query($con,$query);
       if($res){
-        echo '<meta http-equiv="refresh" content=\"0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente\" /> ';
+        echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente" /> ';
 
       }
       else{
