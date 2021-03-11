@@ -84,6 +84,7 @@ if (isset($_REQUEST['guardar'])) {
                 </div>
 
                 <div class="form-group">
+                  <button onclick="location.href='index.php?modulo=envio'" class="btn btn-warning" role="button">Regresar a envio</button>
                   <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
                 </div>
               </form>

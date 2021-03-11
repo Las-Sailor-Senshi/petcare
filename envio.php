@@ -1,4 +1,24 @@
 <?php
+if (isset($_REQUEST['idBorrar'])) {
+  $id = mysqli_real_escape_string($con, $_REQUEST['idBorrar'] ?? '');
+  $query = "DELETE FROM Direcciones WHERE idDireccion='" . $id . "';";
+  $res = mysqli_query($con, $query);
+  if ($res) {
+?>
+    <div class="alert alert-warning float-right" role="alert">
+      Dirección borrada con exito
+    </div>
+  <?php
+  } else {
+  ?>
+    <div class="alert alert-danger float-right" role="alert">
+      Error al borrar <?php echo mysqli_error($con); ?>
+    </div>
+<?php
+  }
+}
+?>
+<?php
 if (isset($_SESSION['idCliente'])) {
 ?>
     <!-- Content Wrapper. Contains page content -->
@@ -48,7 +68,12 @@ if (isset($_SESSION['idCliente'])) {
                                             <td><?php echo $row['codigoPostal'] ?></td>
                                             <td><?php echo $row['telefono_1'] ?></td>
                                             <td><?php echo $row['telefono_2'] ?></td>
-                                            <td><button onclick="location.href='index.php?modulo=pasarela&idDireccion=<?php echo $row['idDireccion'] ?>'" class="btn btn-primary" role="button">Seleccionar | Ir a pagar</button></td>
+                                            <td>
+                                                <button onclick="location.href='index.php?modulo=pasarela&idDireccion=<?php echo $row['idDireccion'] ?>'" class="btn btn-primary" role="button">Seleccionar | Ir a pagar</button>
+                                                <hr>
+                                                <a href="index.php?modulo=editarDireccion&idDir=<?php echo $row['idDireccion'] ?>" style="margin-right: 25px;"><i class="fas fa-edit"></i></a>
+                                                <a href="index.php?modulo=envio&idBorrar=<?php echo $row['idDireccion'] ?>" class="text-danger borrar" ><i class="fas fa fa-trash"></i></i></a>
+                                            </td>
                                         </tr>
                                     <?php
                                     }
