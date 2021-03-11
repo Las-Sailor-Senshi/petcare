@@ -25,21 +25,12 @@
     }
   ?>
 </head>
-<!--
-                        $modulo=$_REQUEST['modulo']??'';
-                        if($modulo=="productos" || $modulo=="" ) {
-                          include_once "productos.php";
-                        }
-                        if($modulo=="detalleproducto" || $modulo=="" ) {
-                          include_once "detalleproducto.php";
-                        }
-                        if($modulo=="carrito" || $modulo=="" ) {
-                          include_once "carrito.php";
-                        }
-                        if($modulo=="envio" || $modulo=="" ) {
+
+                       
+                        <!-- if($modulo=="envio" || $modulo=="" ) {
                           include_once "envio.php";
-                        }
--->
+                        } -->
+
 
 
 <body>
@@ -51,14 +42,23 @@
                     <?php
                         
                         include_once "menu.php";
-                        $modulo=$_REQUEST['modulo']??'';
-                        if($modulo=="envio" || $modulo=="" ) {
+                        /* $modulo=$_REQUEST['modulo']??''; */
+                       /*  if($modulo=="productos" || $modulo=="" ) {
+                          include_once "productos.php";
+                        }
+                        if($modulo=="detalleproducto" || $modulo=="" ) {
+                          include_once "detalleproducto.php";
+                        }
+                        if($modulo=="carrito" || $modulo=="" ) {
+                          include_once "carrito.php";
+                        } */
+                        /* if($modulo=="envio" || $modulo=="" ) {
                           include_once "envio.php";
-                        }
+                        } */
 
-                        if($modulo == "factura"){
+                        /* if($modulo == "factura"){
                           include_once "factura.php";
-                        }
+                        } */
 
                         include_once "admin/db_ecommerce.php";
                         $con = mysqli_connect($host, $user, $dbpass, $db);

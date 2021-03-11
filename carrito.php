@@ -1,4 +1,4 @@
-<table class="table table-striped table-inverse" id="tablaCarrito">
+<table class="table table-striped table-inverse" id="tablaCarrito" >
     <thead class="thead-inverse">
         <tr>
             <th>Imagen</th>
