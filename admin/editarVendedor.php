@@ -31,6 +31,8 @@
     $res=mysqli_query($con, $query);
     $row=mysqli_fetch_assoc($res);
 ?>
+
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->

@@ -2,9 +2,14 @@
 include_once "db_ecommerce.php";
 $con = mysqli_connect($host,$user, $dbpass, $db);
 
+$name =mysqli_real_escape_string($con , $_REQUEST['name']??'');
+$id =mysqli_real_escape_string($con , $_REQUEST['id']??'');
 
-$name = $_GET['name'];
-$id = $_GET['id'];
+//$name = $_REQUEST['name'];
+//$id = $_REQUEST['id'];
+
+//$name = $_GET['name'];
+//$id = $_GET['id'];
 
 /*
 if(isset($_GET['name'])){
@@ -67,8 +72,7 @@ if(isset($_GET['id'])){
                                 <td><?php echo $row['stock']?></td>
                                 <td><?php echo $row['precio']?></td>
                                 <td>
-                                  <a href="" onclick="borrar();"><i class="fas fa-trash  "></i></a>
-                                  <a href="panelLoginVendedor.php?modulo=editarProducto&id=<?php echo $row['idProducto']?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
+                                  <a href="panelLoginVendedor.php?modulo=editarProducto&idProducto=<?php echo $row['idProducto']?>" style="margin-right: 10px;" ><i class="fas fa-edit  "></i></a>
                                   <a href="eliminar.php?id=<?php echo $row['idCategoria']?>" class="text-danger" ><i class="fas fa-trash  "></i></a>
                                 </td>
                             </tr>

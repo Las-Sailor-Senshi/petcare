@@ -1,6 +1,35 @@
 <?php
   include_once "db_ecommerce.php";
   $con=mysqli_connect($host, $user, $dbpass, $db);
+
+  if( isset($_REQUEST['guardar'])){
+
+        $idProducto= mysqli_real_escape_string($con , $_REQUEST['idProducto']??'');
+        $nomProducto= mysqli_real_escape_string($con , $_REQUEST['nomProducto']??'');
+        $stock=mysqli_real_escape_string($con , $_REQUEST['stock']??'');
+        $precio= mysqli_real_escape_string($con , $_REQUEST['precio']??'');
+        $descripcion= mysqli_real_escape_string($con , $_REQUEST['descripcion']??'');
+
+        $query="UPDATE Productos SET
+         nomProducto = '".$nomProducto."', stock = '".$stock."', precio = '".$precio."', descripcion = '".$descripcion."' 
+         WHERE idProducto = '".$idProducto."'";
+      $res= mysqli_query($con,$query);
+      if($res){
+        echo '<meta http-equiv="refresh" content=\"0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente\" /> ';
+
+      }
+      else{
+          ?>
+              <div class="alert alert-danger" role="alert">
+                  Error al editar producto <?php echo mysqli_error($con); ?>
+              </div>
+          <?php
+      }
+  }
+  $idProducto=mysqli_real_escape_string($con, $_REQUEST['idProducto']??'');
+  $query="SELECT  idProducto, nomProducto, stock, precio, descripcion from Productos where idProducto='".$idProducto."'  ;";
+  $res=mysqli_query($con, $query);
+  $row=mysqli_fetch_assoc($res);
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -24,50 +53,35 @@
               <!-- /.card-header -->
               <div class="card-body">
 
-                  <?php
-                  if(isset($_GET['id'])){
-                    $id= $_GET['id'];
-                  } else {
-                    $id = "";
-                  }
-//                    $id = $_GET['id'];
-                    $query = "SELECT * FROM Productos WHERE idProducto = '".$id."'";
-                    $res= mysqli_query($con,$query);
+                    <form action="panelLoginVendedor.php?modulo=editarProducto&idProducto=<?php echo $row['idProducto']?>" method="post">
 
-                    while( $row= mysqli_fetch_assoc($res) ){
-                  ?>
-
-                    <form action="panelLoginVendedor.php?modulo=editarProducto" method="post">
-                        <table id="tablaEditarProducto" class="table table-bordered table-hover">
-                            <tbody>
                                 <div class="form-group">
                                 <label>Nombre Producto</label>
-                                <input type="text" name="nombreProducto" class="form-control" value ="<?php echo $row['nomProducto'] ?>">
+                                <input type="text" name="nomProducto" class="form-control" value ="<?php echo $row['nomProducto'] ?>"  required="requiered" >
                                 </div>
                                 <div class="form-group">
                                 <label>Stock</label>
-                                <input type="text" name="stock" class="form-control" value ="<?php echo $row['stock'] ?>">
+                                <input type="text" name="stock" class="form-control" value ="<?php echo $row['stock'] ?>"  required="requiered">
                                 </div>
                                 <div class="form-group">
                                 <label>Precio</label>
-                                <input type="text" name="precio" class="form-control" value ="<?php echo $row['precio'] ?>">
+                                <input type="text" name="precio" class="form-control" value ="<?php echo $row['precio'] ?>"  required="requiered">
                                 </div>
                                 <div class="form-group">
                                 <label>Descripcion</label>
-                                <input type="text" name="descripcion" class="form-control"  value ="<?php echo $row['descripcion'] ?>">
+                                <input type="text" name="descripcion" class="form-control"  value ="<?php echo $row['descripcion'] ?>"  required="requiered"> 
                                 </div>
+                                
+                                <!-- Para editar las imagenes 
                                 <div class="form-group">
                                 <label>Imagenes</label>
-                                <input type="image" name="imagenes" class="form-control">
+                                <input type="image" name="imagenes" class="form-control"  required="requiered">
                                 </div>
+                                -->
                                 <div class="form-group">
                                         <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
-                                        <button type="submit" class="btn btn-primary" name="cancelar">Cancelar</button>
                                 </div>
-                            </tbody>
-                        </table>                    
                     </form> 
-                <?php } ?>
                 
 
               </div>
@@ -84,39 +98,3 @@
     </section>
     <!-- /.content -->
   </div>
-
-
-
-  <?php
-    if( isset($_REQUEST['guardar'])){
-
-     //   include_once "db_ecommerce.php";
-    //    $con=mysqli_connect($host, $user, $dbpass, $db);
-          $nombreProducto = $_GET['nombreProducto'];
-          $stock = $_GET['stock'];
-          $precio = $_GET['precio'];
-          $descripcion = $_GET['descripcion'];
-
-
-//        $nombreProducto= mysqli_real_escape_string($con , $_REQUEST['nombreProducto']??'');
-  //      $stock=mysqli_real_escape_string($con , $_REQUEST['stock']??'');
-    //    $precio= mysqli_real_escape_string($con , $_REQUEST['precio']??'');
-      //  $descripcion= mysqli_real_escape_string($con , $_REQUEST['descripcion']??'');
-      //Falta el de imagenes
-        //   $imagenes= mysqli_real_escape_string($con , $_REQUEST['imagenes']??'');
-
-        $query2="UPDATE Productos set nomProducto = '".$nombreProducto."', stock = '".$stock."', precio = '".$precio."', descripcion = '".$descripcion."' WHERE idProducto = '".$id."'";
-        $res2= mysqli_query($con,$query2);
-        if($res2){
-          //Ya lo manda pero no se ve 
-          echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=verProductos" /> ';
-        }
-        else{
-            ?>
-                <div class="alert alert-danger" role="alert">
-                    Error al editar producto <?php echo mysqli_error($con); ?>
-                </div>
-            <?php
-        }
-    }
-?>
