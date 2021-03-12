@@ -1,4 +1,5 @@
 <?php
+   
     $total=$_REQUEST['total']??'';
 
     include_once "stripe/init.php";
@@ -14,13 +15,12 @@
     ]);
     if($charge['captured']){
         $queryVenta="INSERT INTO Ordenes
-        (idCliente,idPago,fecha) VALUES
+        (idCliente,idPago,fecha)  VALUES
         ('".$_SESSION['idCliente']."','".$charge['id']."',now());";
         $resVenta=mysqli_query($con,$queryVenta);
         $id=mysqli_insert_id($con);
-        /*if($resVenta){
-            echo "La venta fue exitosa con el id=".$id;
-        }*/
+        if($resVenta){
+        }
         $insertaDetalle="";
         $cantProd=count($_REQUEST['id']);
         for($i=0;$i<$cantProd;$i++){
@@ -69,7 +69,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th colspan="3" class="text-center">Persona que recibe</th>
+                    <th colspan="3" class="text-cen">Persona que recibe</th>
                 </tr>
                 <tr>
                     <th>Nombre</th>

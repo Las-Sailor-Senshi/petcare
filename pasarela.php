@@ -22,9 +22,6 @@
     </div>
     <div class="mt-3">
         <h4>Terminos y condiciones</h4>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta non quibusdam, assumenda mollitia expedita nihil quisquam sapiente optio rem reiciendis voluptatum laborum eos consectetur obcaecati sint incidunt doloribus placeat!
-        Lorem, ipsum dolor sit amet consectetur (le entrego mi alma a programamdor novato y acepto dar like) adipisicing elit. Minima, soluta non quibusdam, assumenda mollitia expedita nihil quisquam sapiente optio rem reiciendis voluptatum laborum eos consectetur obcaecati sint incidunt doloribus placeat!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta non quibusdam, assumenda mollitia expedita nihil quisquam sapiente optio rem reiciendis voluptatum laborum eos consectetur obcaecati sint incidunt doloribus placeat!
         <div class="form-check">
           <label class="form-check-label">
             <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
