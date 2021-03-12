@@ -86,13 +86,11 @@
                                 <label>Descripcion</label>
                                 <input type="text" name="descripcion" class="form-control"  value ="<?php echo $row['descripcion'] ?>"  required="requiered"> 
                                 </div>
-                                 
-                                    <div class="form-group">
-                                        <input type="file" class="form-control-file" name="foto">
-                                    </div>
-                                
                                 <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
+                                    <input type="file" class="form-control-file" name="foto">
+                                </div>
+                                <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="guardar" >Guardar</button>
                                 </div>
                     </form> 
                 

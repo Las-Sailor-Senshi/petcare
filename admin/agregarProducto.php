@@ -1,5 +1,4 @@
 <?php
- //   $idCategoria =$_REQUEST['idCategoria'];
     include_once "db_ecommerce.php";
     $con = mysqli_connect($host,$user, $dbpass, $db);
     $idCategoria =(int)mysqli_real_escape_string($con , $_REQUEST['idCategoria']??'');
@@ -16,11 +15,22 @@
             (idCategoria, idProducto, nomProducto, precio, stock ,descripcion) VALUES
             ('".$idCategoria."','".$idProducto."',   '".$nomProducto."', '".$precio."','".$stock."',  '".$descripcion."');
         ";
+
+        if (isset($_FILES['foto'])) {
+          $tamanoArchivo = $_FILES['foto']['size'];
+          $imagenSubida = fopen($_FILES['foto']['tmp_name'], 'r');
+          $binariosImagen = fread($imagenSubida, $tamanoArchivo);
+          $binariosImagen = mysqli_escape_string($con, $binariosImagen);
+          $queryImagen = "INSERT INTO ImagenesProductos
+              (idProducto, ImagenProducto) VALUES
+              ('".$idProducto."', '".$binariosImagen."' ); ";
+        }
         $res= mysqli_query($con,$query);
         if($res){
-            //Funciona perfecto 
-            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto agregado exitosamente" /> ';
-
+          $resImagen= mysqli_query($con,$queryImagen);
+          if($resImagen){
+            echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente" /> ';
+          }
         }
         else{
             ?>
@@ -51,10 +61,9 @@
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-                    <form action="panelLoginVendedor.php?modulo=agregarProducto" method="post">
-                    
+                    <form action="panelLoginVendedor.php?modulo=agregarProducto" method="post" enctype="multipart/form-data">
                         <div class="form-group" style="display: none">
-                          <label>ParaQueNodeErrorEnElInsert</label>
+                          <label>ParaQueNodeErrorEnElInsert_ValorDeIdCategoria</label>
                           <input type="number" name="idCategoria" class="form-control" required="requiered" value=<?php echo $idCategoria?>>
                         </div>
                         <div class="form-group">
@@ -78,6 +87,9 @@
                           <label>Descripcion</label>
                           <input type="text" name="descripcion" class="form-control" required="requiered">
                         </div>
+                        <div class="form-group">
+                        <input type="file" class="form-control-file" name="foto" value="Seleccionar Imagen">
+                                </div>
                         <div class="form-group">
                                 <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
                         </div>
