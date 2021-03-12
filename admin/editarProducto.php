@@ -2,21 +2,34 @@
   include_once "db_ecommerce.php";
   $con=mysqli_connect($host, $user, $dbpass, $db);
 
-  if( isset($_REQUEST['guardar'])){
 
+  if( isset($_REQUEST['guardar'])){
         $idProducto= mysqli_real_escape_string($con , $_REQUEST['idProducto']??'');
         $nomProducto= mysqli_real_escape_string($con , $_REQUEST['nomProducto']??'');
         $stock=mysqli_real_escape_string($con , $_REQUEST['stock']??'');
         $precio= mysqli_real_escape_string($con , $_REQUEST['precio']??'');
         $descripcion= mysqli_real_escape_string($con , $_REQUEST['descripcion']??'');
-
         $query="UPDATE Productos SET
          nomProducto = '".$nomProducto."', stock = '".$stock."', precio = '".$precio."', descripcion = '".$descripcion."' 
          WHERE idProducto = '".$idProducto."'";
-      $res= mysqli_query($con,$query);
-      if($res){
-        echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente" /> ';
 
+        if (isset($_FILES['foto'])) {
+          $tamanoArchivo = $_FILES['foto']['size'];
+          $imagenSubida = fopen($_FILES['foto']['tmp_name'], 'r');
+          $binariosImagen = fread($imagenSubida, $tamanoArchivo);
+          $binariosImagen = mysqli_escape_string($con, $binariosImagen);
+          $queryImagen = "UPDATE ImagenesProductos SET
+          
+              ImagenProducto = '".$binariosImagen."'  WHERE idProducto = '".$idProducto."'";
+        }
+        
+      $res= mysqli_query($con,$query);
+      
+      if($res){
+        $resImagen= mysqli_query($con,$queryImagen);
+        if($resImagen){
+          echo '<meta http-equiv="refresh" content="0; url=panelLoginVendedor.php?modulo=catalogo&mensaje=Producto editado exitosamente" /> ';
+        }
       }
       else{
           ?>
@@ -26,10 +39,12 @@
           <?php
       }
   }
+
   $idProducto=mysqli_real_escape_string($con, $_REQUEST['idProducto']??'');
   $query="SELECT  idProducto, nomProducto, stock, precio, descripcion from Productos where idProducto='".$idProducto."'  ;";
   $res=mysqli_query($con, $query);
   $row=mysqli_fetch_assoc($res);
+
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -53,7 +68,7 @@
               <!-- /.card-header -->
               <div class="card-body">
 
-                    <form action="panelLoginVendedor.php?modulo=editarProducto&idProducto=<?php echo $row['idProducto']?>" method="post">
+                    <form action="panelLoginVendedor.php?modulo=editarProducto&idProducto=<?php echo $row['idProducto']?>" method="post" enctype="multipart/form-data">
 
                                 <div class="form-group">
                                 <label>Nombre Producto</label>
@@ -71,15 +86,11 @@
                                 <label>Descripcion</label>
                                 <input type="text" name="descripcion" class="form-control"  value ="<?php echo $row['descripcion'] ?>"  required="requiered"> 
                                 </div>
-                                
-                                <!-- Para editar las imagenes 
                                 <div class="form-group">
-                                <label>Imagenes</label>
-                                <input type="image" name="imagenes" class="form-control"  required="requiered">
+                                    <input type="file" class="form-control-file" name="foto">
                                 </div>
-                                -->
                                 <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" name="guardar">Guardar</button>
+                                        <button type="submit" class="btn btn-primary" name="guardar" >Guardar</button>
                                 </div>
                     </form> 
                 
